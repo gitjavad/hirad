@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'IranSans';
+	src: url('../prsfonts/IranSans.woff') format('woff');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'IranSans';
+	src: url('../prsfonts/IranSansBold.woff') format('woff');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'BYekan';
+	src: url('../prsfonts/BYekan.woff') format('woff');
+	font-weight: normal;
+}
