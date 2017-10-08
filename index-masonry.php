@@ -61,7 +61,7 @@
 <span class="cbp-ig-category">ابزار</span> </a> </li>
 
 <li> <a href="#"> <span class="cbp-ig-icon cbp-ig-icon-whippy"></span>
-<h3 class="cbp-ig-title">نمای کلاسیم</h3>
+<h3 class="cbp-ig-title">نمای کلاسیک</h3>
 <span class="cbp-ig-category">ابزار</span> </a> </li>
 
 <li> <a href="#"> <span class="cbp-ig-icon cbp-ig-icon-spectacles"></span>
@@ -70,7 +70,7 @@
 
 <li> <a href="#"> <span class="cbp-ig-icon cbp-ig-icon-doumbek"></span>
 <h3 class="cbp-ig-title">سنگ</h3>
-<span class="cbp-ig-category">متریال</span> </a> </li>
+<span class="cbp-ig-category">متریال </span> </a> </li>
 
 
 </ul>
