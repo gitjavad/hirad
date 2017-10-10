@@ -4482,7 +4482,7 @@ margin-top: 20px;
     bottom: 0;
 	transform: rotateY(-180deg);
 }
-.box_shop_brand:hover{
+.box_shop_rotate{
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
 	transform: rotateY(180deg);
