@@ -83,8 +83,8 @@
 				<span class="cbp-pgrotate">Rotate Item</span>
 				<div class="cbp-pgitem">
 					<div class="cbp-pgitem-flip">
-						<img src="/hirad-site/images/1_front.png" />
-						<img src="/hirad-site/images/1_back.png" />
+						<img src="/wp-content/themes/hirad-site/images/1_front.png" />
+						<img src="/wp-content/themes/hirad-site/images/1_back.png" />
 					</div>
 				</div><!-- /cbp-pgitem -->
 				<ul class="cbp-pgoptions">
