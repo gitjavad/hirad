@@ -80,7 +80,7 @@
 	<ul class="cbp-pggrid">
 		<li>
 			<div class="cbp-pgcontent">
-				<span class="cbp-pgrotate">Rotate Item</span>
+				<span id="blb_rotate" class="cbp-pgrotate">Rotate Item</span>
 				<div class="cbp-pgitem">
 				<div class="box_shop_brand">
 					<div>1</div>
