@@ -83,7 +83,8 @@
 				<span class="cbp-pgrotate">Rotate Item</span>
 				<div class="cbp-pgitem">
 				<div class="box_shop_brand">
-					
+					<div>1</div>
+					<div>2</div>
 				</div>
 					<div class="cbp-pgitem-flip">
 						<img src="/wp-content/themes/hirad-site/images/1_front.png" />
