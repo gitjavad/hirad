@@ -86,10 +86,7 @@
 					<div>1</div>
 					<div>2</div>
 				</div>
-					<div class="cbp-pgitem-flip">
-						<img src="/wp-content/themes/hirad-site/images/1_front.png" />
-						<img src="/wp-content/themes/hirad-site/images/1_back.png" />
-					</div>
+					
 				</div><!-- /cbp-pgitem -->
 				<ul class="cbp-pgoptions">
 					<li class="cbp-pgoptcompare">Compare</li>
