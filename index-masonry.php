@@ -46,7 +46,7 @@
             </ul>
         </div>
 <hr>
-<ul id="shoping-content" class="cbp-ig-grid">
+<ul id="shoping-content" class="cbp-ig-grid animated slideInLeft ">
 
 <li> <a href="#"> <span class="cbp-ig-icon cbp-ig-icon-shoe"></span>
 <h3 class="cbp-ig-title">پارکت و کفپوش</h3>
