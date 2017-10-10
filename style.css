@@ -4450,13 +4450,15 @@ margin-top: 20px;
 }
 
 .box_shop_brand div:first-child{
-	    width: 100%;
+	width: 100%;
     height: 200px;
     background-color: green;
     color: white;
     text-align: center;
     padding-top: 16%;
     font-size: 100px;
+    position: relative;
+    z-index: 2;
 }
 .box_shop_brand div:nth-child(2){
 	    width: 100%;
@@ -4466,4 +4468,10 @@ margin-top: 20px;
     text-align: center;
     padding-top: 16%;
     font-size: 100px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    right: 0;
+    max-width: 253px;
+    bottom: 0;
 }
