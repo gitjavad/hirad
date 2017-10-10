@@ -37,7 +37,7 @@ if ( function_exists('register_sidebar') ) {
   
   
    wp_enqueue_style( 'animate', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css', array(), '', 'all' );
-    wp_enqueue_script( 'mosaic', get_template_directory_uri() . '/js/modernizr.custom.js', array ( 'jquery' ), 1.1, true);
+    wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.custom.js', array ( 'jquery' ), 1.1, true);
 
  wp_enqueue_script( 'hirad-js', get_template_directory_uri() . '/js/hirad-js.js', array ( 'jquery' ), 1.1, true);
 
@@ -46,7 +46,7 @@ if ( function_exists('register_sidebar') ) {
   wp_enqueue_script( 'dropdown', get_template_directory_uri() . '/js/dropdown.js', array ( 'jquery' ), 1.1, true);
 
   wp_enqueue_script( 'mosaic', get_template_directory_uri() . '/js/mosaic.js', array ( 'jquery' ), 1.1, true);
-	 wp_enqueue_script( 'mosaic', get_template_directory_uri() . '/js/cbpShop.js', array ( 'jquery' ), 1.1, true);
+	 wp_enqueue_script( 'cbpshop', get_template_directory_uri() . '/js/cbpShop.js', array ( 'jquery' ), 1.1, true);
 	 
 	 
 	
