@@ -14,7 +14,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
     });
 	
   $(".cbp-pgrotate").click(function(){
-	 $(".box_shop_brand").className += ' box_shop_rotate' 
+	 $(".box_shop_brand").className += ' box_shop_rotate';
   });
     $( window ).on( "orientationchange", function( event ) {
         location.reload();
