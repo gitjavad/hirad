@@ -7,7 +7,7 @@ jQuery(document).ready(function($){
             document.getElementById("rev_slider_1_2_wrapper").remove();
         document.getElementById("shoping-content").style.cssText= 'display:block !important' ;
      
-        
+        $(".icon_div").append(icon);
 document.getElementById("logo_home").style.cssText = 'display:none';
 
     });

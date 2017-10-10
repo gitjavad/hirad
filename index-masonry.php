@@ -11,7 +11,7 @@
 
 	<?php echo do_shortcode('[rev_slider alias="company-home"]') ?>
 	<hr>
-
+<div class="icon_div">
 	<ul id="icon_list" class="iconlist animated slideInDown">
 		<li class="no_border">
 			<i  class="fa fa-paint-brush fa-3x" aria-hidden="true"></i>
@@ -42,7 +42,7 @@
 
 		</li>
 	</ul>
-
+</div>
 	<hr>
 	<ul id="shoping-content" class="cbp-ig-grid animated slideInLeft ">
 
