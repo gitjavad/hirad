@@ -3775,7 +3775,7 @@ a.icongroup{
     padding: 10px;
 }
 .no_border{
-	border: none;
+	    border-left: none !important;
 }
 /*---------shoping------------*/
 @font-face {
