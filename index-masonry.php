@@ -11,8 +11,8 @@
 	
 	<?php echo do_shortcode('[rev_slider alias="company-home"]') ?>
     <hr>
-  <div id="iconbar animated slideInDown ">
-            <ul class="iconlist">
+  <div id="iconbar ">
+            <ul class="iconlist  animated slideInDown">
                 <li>
                <a class="icongroup" >
                    <i class="fa fa-paint-brush fa-3x" aria-hidden="true"></i>
