@@ -11,40 +11,38 @@
 	
 	<?php echo do_shortcode('[rev_slider alias="company-home"]') ?>
     <hr>
-  <div id="iconbar ">
-            <ul class="iconlist  animated slideInDown">
-                <li>
-               <a class="icongroup" >
+  
+            <ul class="iconlist animated slideInDown">
+                <li
                    <i class="fa fa-paint-brush fa-3x" aria-hidden="true"></i>
                    <p class="caption"> استودیوی طراحی</p>
-               </a>
                 </li>
                 <li>
-                <a class="icongroup" href="#">
+                
                     <i class="fa fa-newspaper-o fa-3x" aria-hidden="true"></i>
                     <p class="caption">اخبار</p>
-                </a>
+                
                 </li>
                 <li>
-                <a class="icongroup" href="#">
+               
                     <i class="fa fa-download fa-3x" aria-hidden="true"></i>
                     <p class="caption">دانلودها</p>
-                </a>
+               
                 </li>
                 <li>
-                <a class="icongroup" href="#">
+               
                     <i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i>
                     <p class="caption"> ایده ها</p>
-                </a>
+                
                 </li>
                 <li>
-                <a class="icongroup" href="#">
+               
                     <i class="fa fa-university fa-3x" aria-hidden="true"></i>
                     <p class="caption">برند شناسی</p>
-                </a>
+                
                 </li>
             </ul>
-        </div>
+        
 <hr>
 <ul id="shoping-content" class="cbp-ig-grid animated slideInLeft ">
 
