@@ -11,7 +11,7 @@
 	
 	<?php echo do_shortcode('[rev_slider alias="company-home"]') ?>
     <hr>
-  <div id="iconbar">
+  <div id="iconbar animated slideInDown ">
             <ul class="iconlist">
                 <li>
                <a class="icongroup" >
