@@ -4445,7 +4445,7 @@ margin-top: 20px;
 	}
 }
 /*--------edit shop--------*/
-.box_shop_brand:first-child{
+.box_shop_brand div:first-child{
 	    width: 100%;
     height: 200px;
     background-color: green;
@@ -4454,7 +4454,7 @@ margin-top: 20px;
     padding-top: 16%;
     font-size: 100px;
 }
-.box_shop_brand:nth-child(2){
+.box_shop_brand div:nth-child(2){
 	    width: 100%;
     height: 200px;
     background-color: red;
