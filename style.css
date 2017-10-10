@@ -3803,7 +3803,7 @@ clear: both;
 .cbp-ig-grid li {
 width: 33%;
 float: left;
-height: 420px;
+/*height: 420px;*/
 text-align: center;
 border-top: 1px solid #ddd;
 }
