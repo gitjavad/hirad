@@ -82,7 +82,7 @@
 			<div class="cbp-pgcontent">
 				<span id="blb_rotate" class="cbp-pgrotate">Rotate Item</span>
 				<div class="cbp-pgitem">
-				<div class="box_shop_brand">
+				<div id="brand_rotate" class="box_shop_brand">
 					<div>1</div>
 					<div>2</div>
 				</div>
