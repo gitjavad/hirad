@@ -3759,8 +3759,14 @@ a.icongroup{
     text-align: center;
 	
 }
+.iconlist{
+    background-color: #9aca3c;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+	display: flex;}
 .iconlist li{
-     display: inline-table;
+     display: list-item;
     list-style: none;
     margin-left: 10px;
 	color: white;
