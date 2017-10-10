@@ -30,7 +30,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<?php wp_head(); ?>
 	<?php eval('?>' . of_get_option('header_scripts')); ?>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.js"></script>
+
 	<!--[if lt IE 9]>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
