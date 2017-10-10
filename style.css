@@ -4446,8 +4446,13 @@ margin-top: 20px;
 }
 /*--------edit shop--------*/
 .box_shop_brand {
-	    transition: transform .4s ease-out;
-
+	 
+-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform .4s ease-out;
+	-moz-transition: -moz-transform .4s ease-out;
+	transition: transform .4s ease-out;
 }
 
 .box_shop_brand div:first-child{
@@ -4475,4 +4480,10 @@ margin-top: 20px;
     right: 0;
     max-width: 253px;
     bottom: 0;
+	transform: rotateY(-180deg);
+}
+.box_shop_brand:hover{
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
