@@ -13,8 +13,8 @@
 	<hr>
 
 	<ul class="iconlist animated slideInDown">
-		<li>
-			<i class="fa fa-paint-brush fa-3x" aria-hidden="true"></i>
+		<li class="no_border">
+			<i  class="fa fa-paint-brush fa-3x" aria-hidden="true"></i>
 			<p class="caption"> استودیوی طراحی</p>
 		</li>
 		<li>

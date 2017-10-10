@@ -3766,11 +3766,16 @@ a.icongroup{
     text-align: center;
 	display: flex;}
 .iconlist li{
-     display: list-item;
+        display: list-item;
     list-style: none;
-    margin-left: 10px;
-	color: white;
-	margin-top: 20px;
+   
+    color: white;
+  
+    border-left: 1px dashed white;
+    padding: 10px;
+}
+.no_border{
+	border: none;
 }
 /*---------shoping------------*/
 @font-face {
