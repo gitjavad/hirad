@@ -5,8 +5,8 @@ jQuery(document).ready(function($){
         if (document.getElementById("rev_slider_1_2_wrapper")!= null)
             document.getElementById("rev_slider_1_2_wrapper").remove();
         document.getElementById("shoping-content").style.cssText= 'display:block !important' ;
-      document.getElementById("icon_list").style.cssText= 'display:none !important' ;
-        document.getElementById("icon_list").style.cssText= 'display:block !important' ;
+     
+        document.getElementById("icon_list").removeClass("animated").addClass("animated");
 document.getElementById("logo_home").style.cssText = 'display:none';
 
     });
