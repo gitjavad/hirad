@@ -6,7 +6,7 @@ jQuery(document).ready(function($){
             document.getElementById("rev_slider_1_2_wrapper").remove();
         document.getElementById("shoping-content").style.cssText= 'display:block !important' ;
       
-        
+        document.getElementById("icon_list").style.cssText= 'display:block !important' ;
 document.getElementById("logo_home").style.cssText = 'display:none';
 
     });

@@ -12,7 +12,7 @@
 	<?php echo do_shortcode('[rev_slider alias="company-home"]') ?>
 	<hr>
 
-	<ul class="iconlist animated slideInDown">
+	<ul id="icon_list" class="iconlist animated slideInDown">
 		<li class="no_border">
 			<i  class="fa fa-paint-brush fa-3x" aria-hidden="true"></i>
 			<p class="caption"> استودیوی طراحی</p>
