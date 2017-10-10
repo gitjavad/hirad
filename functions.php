@@ -46,6 +46,8 @@ if ( function_exists('register_sidebar') ) {
   wp_enqueue_script( 'dropdown', get_template_directory_uri() . '/js/dropdown.js', array ( 'jquery' ), 1.1, true);
  
   wp_enqueue_script( 'mosaic', get_template_directory_uri() . '/js/mosaic.js', array ( 'jquery' ), 1.1, true);
+	 wp_enqueue_script( 'mosaic', get_template_directory_uri() . '/js/ cbpShop.js', array ( 'jquery' ), 1.1, true);
+	
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
