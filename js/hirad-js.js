@@ -14,7 +14,8 @@ document.getElementById("logo_home").style.cssText = 'display:none';
     });
 	
   document.getElementById("blb_rotate").addEventListener("click",function(){
-	 $(".box_shop_brand").className += ' box_shop_rotate'; 
+	  console.log("salam");
+	 /*$(".box_shop_brand").className += ' box_shop_rotate'; */
   });
 	 
   
