@@ -4482,6 +4482,7 @@ margin-top: 20px;
     max-width: 253px;
     bottom: 0;
 	transform: rotateY(-180deg);
+	display: none;
 }
 .box_shop_rotate{
 	-webkit-transform: rotateY(180deg);
