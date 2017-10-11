@@ -100,7 +100,7 @@
 						</li>
 						
 					</ul>
-						<ul style="display: flex">
+						<ul style="display: flex;margin-top: -81px">
 						<li>
 							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
 						</li>
@@ -115,7 +115,7 @@
 						</li>
 						
 					</ul>
-					<ul style="display: flex">
+					<ul style="display: flex;margin-top: -81px">
 						<li>
 							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
 						</li>
@@ -130,7 +130,7 @@
 						</li>
 						
 					</ul>
-					<ul style="display: flex">
+					<ul style="display: flex;margin-top: -81px">
 						<li>
 							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
 						</li>
