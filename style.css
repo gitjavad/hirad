@@ -4465,6 +4465,7 @@ margin-top: 20px;
     font-size: 100px;
     position: relative;
     z-index: 2;
+	display: block;
 }
 .box_shop_brand div:nth-child(2){
 	    width: 100%;
@@ -4486,6 +4487,15 @@ margin-top: 20px;
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
 	transform: rotateY(180deg);
+	
+}
+.box_shop_rotate div:first-child{
+	display: none;
+	
+}
+.box_shop_rotate div:nth-child(2){
+	display: block;
+	
 }
 barnd_back{
 	
