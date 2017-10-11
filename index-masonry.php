@@ -87,19 +87,19 @@
 					<div>
 					<ul>
 						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="253px">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="253px">
 						</li>
 						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="253px">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="253px">
 						</li>
 						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="253px">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="253px">
 						</li>
 						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="253px">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="253px">
 						</li>
 						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="253px">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="253px">
 						</li>
 					</ul>
 						
