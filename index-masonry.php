@@ -84,7 +84,12 @@
 				<div class="cbp-pgitem">
 				<div id="brand_rotate" class="box_shop_brand">
 					<div>1</div>
-					<div>2</div>
+					<div class="row brand_back">
+						<div class="col-md-3 "></div>
+						<div class="col-md-3 "></div>
+						<div class="col-md-3 "></div>
+						
+					</div>
 				</div>
 					
 				</div><!-- /cbp-pgitem -->
