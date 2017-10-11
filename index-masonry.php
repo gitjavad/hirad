@@ -100,7 +100,51 @@
 						</li>
 						
 					</ul>
+						<ul style="display: flex">
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
+						</li>
 						
+					</ul>
+					<ul style="display: flex">
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
+						</li>
+						
+					</ul>
+					<ul style="display: flex">
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
+						</li>
+						
+					</ul>
 					</div>
 				</div>
 					
