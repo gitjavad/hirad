@@ -84,7 +84,9 @@
 				<div class="cbp-pgitem">
 				<div id="brand_rotate" class="box_shop_brand">
 					<div>1</div>
-					<div>2</div>
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg">
+					</div>
 				</div>
 					
 				</div><!-- /cbp-pgitem -->
