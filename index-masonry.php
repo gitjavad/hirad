@@ -84,8 +84,53 @@
 				<div class="cbp-pgitem">
 				<div id="brand_rotate" class="box_shop_brand">
 					<div>Esil</div>
-					<div>
-					<ul style="display: flex">
+					<div>	
+					<ul >
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="50pxpx" >
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="50pxpx" >
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="50pxpx" >
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="50pxpx" >
+						</li>
+						
+					</ul>
+						<ul style="margin-top: -81px">
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="50pxpx" >
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="50pxpx" >
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="50pxpx" >
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="50pxpx" >
+						</li>
+						
+					</ul>
+					<ul style="margin-top: -81px">
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="50pxpx" >
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="50pxpx" >
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="50pxpx" >
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="50pxpx">
+						</li>
+						
+					</ul>
+					<!--<ul style="display: flex">
 						<li>
 							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
 						</li>
@@ -130,7 +175,7 @@
 						</li>
 						
 					</ul>
-					
+					-->
 					</div>
 				</div>
 					
