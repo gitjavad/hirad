@@ -4498,9 +4498,10 @@ margin-top: 20px;
 	position: relative;
 	
 }
+
 #brand_rotate img{
 	border-radius: 10px;
-    
     margin-top: -164px;
-    margin-left: -204px;
+    /* margin-left: -204px; */
+    margin-right: 10px;
 }
