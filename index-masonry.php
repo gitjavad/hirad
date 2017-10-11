@@ -85,7 +85,24 @@
 				<div id="brand_rotate" class="box_shop_brand">
 					<div>1</div>
 					<div>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="253px">
+					<ul>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="253px">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="253px">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="253px">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="253px">
+						</li>
+						<li>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_1.jpg" width="253px">
+						</li>
+					</ul>
+						
 					</div>
 				</div>
 					
