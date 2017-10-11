@@ -4489,14 +4489,7 @@ margin-top: 20px;
 	transform: rotateY(180deg);
 	
 }
-.box_shop_rotate div:first-child{
-	display: none;
-	
-}
-.box_shop_rotate div:nth-child(2){
-	display: block;
-	
-}
+
 barnd_back{
 	
 }
