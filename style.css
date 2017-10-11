@@ -4468,9 +4468,8 @@ margin-top: 20px;
 	display: block;
 }
 .box_shop_brand div:nth-child(2){
-	    width: 100%;
-    
-    background-color: red;
+	     width: 100%;
+    background-color: white;
     color: white;
     text-align: center;
     padding-top: 16%;
@@ -4481,8 +4480,8 @@ margin-top: 20px;
     right: 0;
     max-width: 253px;
     bottom: 0;
-	transform: rotateY(-180deg);
-	display: none;
+    transform: rotateY(-180deg);
+    display: none;
 }
 .box_shop_rotate{
 	-webkit-transform: rotateY(180deg);
@@ -4499,6 +4498,9 @@ margin-top: 20px;
 	position: relative;
 	
 }
-barnd_back{
-	
+#brand_rotate img{
+	border-radius: 10px;
+    
+    margin-top: -164px;
+    margin-left: -204px;
 }
