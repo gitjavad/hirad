@@ -175,6 +175,11 @@
 </div><!-- /cbp-pgcontainer -->
 
 	<hr>
+	<?php
+$user_count = $wpdb->get_var( "SELECT COUNT(*) FROM $wpdb->users" );
+echo "<p>User count is {$user_count}</p>";
+?>
+	<hr>
 
 	<div id="masonry" class="row">
 		<?php $count_ad = 1; if (have_posts()) : while (have_posts()) : the_post(); ?>
