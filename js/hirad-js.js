@@ -9,6 +9,7 @@ jQuery(document).ready(function($){
      
 		
         $(".icon_div").append(icon);
+        /*
 document.getElementById("logo_home").style.cssText = 'display:none';
 
     });
@@ -29,7 +30,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 
         }
 
-    });
+    });*/
 
 
 
