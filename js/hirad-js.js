@@ -15,8 +15,8 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 	var brn_rot =$(".blb_rotate");
 
 
-    var brand=document.getElementById('cc')
-    console.log(brand.className)
+    var brand=document.getElementsByClassName('cbp-pgitem')
+    console.log(brand.id)
  brn_rot.on("click",function(event){
      event.preventDefault();
 
