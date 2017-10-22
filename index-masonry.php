@@ -88,7 +88,7 @@
                     global $wpdb;
                     $result = $wpdb->get_results( "SELECT COUNT(*), company FROM wp_hirad_shoping GROUP BY company" );
                     foreach ($result as $row){
-                       $res=$row->company;
+                       array_push($res,$res=$row->company);
 
                     }
                     echo "<p>{json_encode($res)}</p>";
