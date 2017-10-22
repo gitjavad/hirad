@@ -91,7 +91,7 @@
 
                          while($row = $result->fetch_assoc()) {
 
-                             echo "<script>console.log('".$row['company']."')</script>";
+                             echo "<script>console.log('".$row."')</script>";
 
                               }
                     } else {
