@@ -77,12 +77,6 @@
 
 	<hr>
 
-
-
-
-
-
-    ?>
 <div id="cbp-pgcontainer" class="cbp-pgcontainer">
 	<ul class="cbp-pggrid">
         <?php
