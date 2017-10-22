@@ -19,7 +19,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 	
  blb_rotate.on("click",'div',function(e){
 
-	  if( $(this).getAttribute ( 'data-open' ) === 'open' ) {
+	  if( e.child().getAttribute ( 'data-open' ) === 'open' ) {
 				e.child().setAttribute( 'data-open', '' );
 				e.child().className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
 
