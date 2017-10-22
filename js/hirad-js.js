@@ -15,14 +15,14 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 	var brn_rot =$(".blb_rotate");
 
 
-    var brand=document.getElementsByClassName('brand_rotate')
-  console.log(brand.firstChild.className)
+    var brand_div=document.getElementsByClassName('brand_rotate')
+  var bran=brand_div[0]
  brn_rot.on("click",function(event){
      event.preventDefault();
 
 
 
-	  /*if( brand.getAttribute ( 'data-open' ) === 'open' ) {
+	  if( brand.getAttribute ( 'data-open' ) === 'open' ) {
 				brand.setAttribute( 'data-open', '' );
 				brand.className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
 
@@ -31,7 +31,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
          brand.setAttribute( 'data-open', 'open' );
         brand.className += ' box_shop_rotate';
 				
-			}*/
+			}
 	 
   });
 	 
