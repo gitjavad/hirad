@@ -86,7 +86,7 @@
                     <?php
                     $res=array();
                     global $wpdb;
-                    $user_count = $wpdb->get_var( "SELECT COUNT(*) FROM $wpdb->hirad_shoping" );
+                    $user_count = $wpdb->get_var( "SELECT COUNT(*) FROM wp_hirad_shoping" );
                     echo "<p>User count is {$user_count}</p>";
 
 
