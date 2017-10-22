@@ -99,7 +99,7 @@
                             $res[]=$row['company'];
                         }
                     echo "<script>console.log('".json_encode($res)."')</script>";
-
+                    echo "<script>console.log('hi')</script>";
 
                     ?>
 					<!--<div>Esil</div>
