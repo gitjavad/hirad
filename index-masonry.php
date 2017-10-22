@@ -87,8 +87,15 @@
         foreach ($result as $row){
             echo "<li>
                    <div class='cbp-pgcontent'>
-                      <span onclick='set_img_product($(this).getAttribute())' class='cbp-pgrotate'>Rotate Item</span>
-                      <div class='cbp-pgitem'>
+                      <span onclick='set_img_product($(this).getAttribute())' class='cbp-pgrotate'>Rotate Item</span>";
+                 $brand="<script>
+function set_img_product(pr_brand) {
+    return pr_brand;
+  
+}
+</script>";
+                 echo "<script>console.log('".$brand."')</script>";
+                 echo "    <div class='cbp-pgitem'>
                           <div class='box_shop_brand'>
                             <div>{$row->company}</div>
                             <div>
@@ -102,13 +109,6 @@
 
             echo "<li><img src='".$plug_url."/img/".$row2->sn."'></li>";*/
 
-            echo "<script>
-                    function set_img_product(txt_brand) {
-                      var brand=txt_brand;".
-                $brand='<script>console.log(document.write(brand))</script>'
-                ."
-                       
-                    }</script>";
 
 
 
