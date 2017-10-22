@@ -18,14 +18,14 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 	
 	
   document.getElementById("blb_rotate").addEventListener("click",function(){
-	  if( brn_rot.getAttribute ( 'data-open' ) === 'open' ) {
-				brn_rot.setAttribute( 'data-open', '' );
-				brn_rot.className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
+	  if( brn_rot.target.getAttribute ( 'data-open' ) === 'open' ) {
+				brn_rot.target.setAttribute( 'data-open', '' );
+				brn_rot.target.className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
 				
 			}
 			else {
-				brn_rot.setAttribute( 'data-open', 'open' );
-				 brn_rot.className += ' box_shop_rotate';
+				brn_rot.target.setAttribute( 'data-open', 'open' );
+				 brn_rot.target.className += ' box_shop_rotate';
 				
 			}
 	 
