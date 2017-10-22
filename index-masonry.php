@@ -87,7 +87,7 @@
         foreach ($result as $row){
             echo "<li>
                    <div class='cbp-pgcontent'>
-                      <span class='cbp-pgrotate'>Rotate Item</span>
+                      <span onclick='set_img_product($(this).getAttribute())' class='cbp-pgrotate'>Rotate Item</span>
                       <div class='cbp-pgitem'>
                           <div class='box_shop_brand'>
                             <div>{$row->company}</div>
@@ -96,9 +96,22 @@
             $result2=$wpdb->get_results( "SELECT * FROM wp_hirad_shoping WHERE company='".$row->company."'" );
             foreach ($result2 as $row2){
 
-                echo "<li><img src='".$plug_url."/img/".$row2->sn."'></li>";
+
 
             }
+
+            echo "<li><img src='".$plug_url."/img/".$row2->sn."'></li>";
+
+            echo "<script>
+                    function set_img_product(txt_brand) {
+                      var brand=txt_brand;".
+                $brand='<script>console.log(document.write(brand))</script>'
+                ."
+                       
+                    }</script>";
+
+
+
                       echo      " </ul></div>
                           </div> 
                       </div> 
