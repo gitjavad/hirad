@@ -126,10 +126,10 @@
 				<h3>Save my trees</h3>
 				<span class='cbp-pgprice'>$29</span>
 			</div>
-                   </li>
+                  
                    	</ul><!-- /cbp-pggrid -->
 </div><!-- /cbp-pgcontainer -->
-                   
+                    </li>
                    
                    ";
 
