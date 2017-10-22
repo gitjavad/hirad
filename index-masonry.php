@@ -93,22 +93,20 @@
                     include_once $path . '/wp-includes/pluggable.php';
                     $res=array();
                     global $wpdb;
-                    echo "<script>console.log('".$wpdb."')</script>";
+                    $db_table_name = $wpdb->prefix . 'wp_hirad_shoping';
+                    $holder = "%s";
 
 
-                    $result=$wpdb->get_results('SELECT company, COUNT(*) FROM wp_hirad_shoping GROUP BY company HAVING COUNT(*) > 1
-');
-                    if ($result->num_rows > 0) {
-
-                         while($row = $result->fetch_assoc()) {
-
-                             echo "<script>console.log('".$row."')</script>";
-
-                              }
-                    } else {
 
 
+
+
+                    $result= $wpdb->get_results( $wpdb->prepare("SELECT company, COUNT(*) FROM ".$db_table_name." GROUP BY company HAVING COUNT(*) > 1"),ABDAY_1);
+                        foreach ($result as $row){
+                            $res[]=$res['company'];
                         }
+
+                    echo "<script>console.log('".json_encode($res)."')</script>";
 
 
                     ?>
