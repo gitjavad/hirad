@@ -16,7 +16,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 
 
     var brand=document.getElementsByClassName('cbp-pgitem')
-    brand.className+='ss'
+   console.log(brand.length)
  brn_rot.on("click",function(event){
      event.preventDefault();
 
