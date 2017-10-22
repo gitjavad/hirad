@@ -83,7 +83,24 @@
                 <span id="blb_rotate" class="cbp-pgrotate">Rotate Item</span>
                     <div  class="cbp-pgitem">
 				<div id="brand_rotate" class="box_shop_brand"  >
+                    <?php
+                    $res=array();
+                     $result=$wpdb->get_results('SELECT company, COUNT(*) FROM wp_hirad_shoping GROUP BY company HAVING COUNT(*) > 1
+');
+                    if ($result->num_rows > 0) {
 
+                         while($row = $result->fetch_assoc()) {
+                            array_push($res,$row['company']);
+
+
+                              }
+                    } else {
+
+
+                        }
+                        $total_res=json_encode($res);
+                    echo "<script>console.log('".$total_res."')</script>";
+                    ?>
 					<!--<div>Esil</div>
 					<div>
 
