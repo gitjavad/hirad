@@ -1,12 +1,12 @@
 jQuery(document).ready(function($){
   var icon = document.getElementById("icon_list");
     document.getElementById("shoping-content").style.cssText= 'display:none' ;
-    $("#shoping").click(function(){
-		icon.remove();
-        if (document.getElementById("rev_slider_1_2_wrapper")!= null)
+    $("#shoping").click(function() {
+        icon.remove();
+        if (document.getElementById("rev_slider_1_2_wrapper") != null)
             document.getElementById("rev_slider_1_2_wrapper").remove();
-        document.getElementById("shoping-content").style.cssText= 'display:block !important' ;
-     
+        document.getElementById("shoping-content").style.cssText = 'display:block !important';
+    });
 		
         $(".icon_div").append(icon);
         /*
