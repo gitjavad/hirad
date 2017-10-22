@@ -20,8 +20,8 @@ document.getElementById("logo_home").style.cssText = 'display:none';
  brn_rot.on("click",function(event){
      event.preventDefault();
 
-     var brand=$('.brand_rotate');
-     console.log(brand.target.className)
+     var brand=$('div.brand_rotate');
+     console.log(brand.className)
 	  /*if( brand.getAttribute ( 'data-open' ) === 'open' ) {
 				brand.setAttribute( 'data-open', '' );
 				brand.className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
