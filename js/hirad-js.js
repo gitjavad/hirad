@@ -19,7 +19,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 	
  brn_rot.on("click",'div.brand_rotate',function(event){
      event.preventDefault();
-
+console.log('hi')
      var brand=$(event.target).children();
      console.log(brand.className)
 	  /*if( brand.getAttribute ( 'data-open' ) === 'open' ) {
