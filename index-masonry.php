@@ -95,14 +95,15 @@
                     global $wpdb;
 
                     $db_table_name = $wpdb->prefix . 'hirad_shoping';
-                   /* $result= $wpdb->get_results( $wpdb->prepare("SELECT company, COUNT(*) FROM ".$db_table_name." GROUP BY company HAVING COUNT(*) > 1"),ABDAY_1);
-                      */
-                    $result= $wpdb->get_results($wpdb->prepare("SELECT * FROM wp_hirad_shoping"));
-
+                    $sql="SELECT company, COUNT(*) FROM ".$db_table_name." GROUP BY company HAVING COUNT(*) > 1";
+                    $result= $wpdb->get_results( $wpdb->prepare($sql));
                     foreach ($result as $row){
                             $res[]=$row['company'];
                         }
-                    echo "<script>console.log('".json_encode($res)."')</script>";
+                    $wpdb -> show_errors ();
+                    $wpdb -> get_results ($wpdb -> prepare($sql));
+
+                    echo "<script>console.log('".json_encode($wpdb -> print_error ())."')</script>";
 
 
                     ?>
