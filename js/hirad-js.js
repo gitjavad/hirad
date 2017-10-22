@@ -12,10 +12,10 @@ jQuery(document).ready(function($){
 document.getElementById("logo_home").style.cssText = 'display:none';
 
     });
-	var brn_rot =$(".blb_rotate");
+	var brn_rot =document.getElementById('blb_rotate')
 
 
-    var brand=document.getElementsByClassName('cbp-pgitem')
+    var brand=document.getElementById('brand_rotate')
  brn_rot.addEventListener("click",function(){
 
 
