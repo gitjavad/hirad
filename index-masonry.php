@@ -95,9 +95,14 @@
                   <div class='cbp-pgitem'>
                   <div class='box_shop_brand'>
                   <div>{$row->company}</div>
+                  
                   </div> </div> </div> </li>";
 
         }?>
+
+
+
+
 		<!--<li>
 			<div class="cbp-pgcontent">
                 <span id="blb_rotate" class="cbp-pgrotate">Rotate Item</span>
