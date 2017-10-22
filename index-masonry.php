@@ -84,8 +84,16 @@
                     <div  class="cbp-pgitem">
 				<div id="brand_rotate" class="box_shop_brand"  >
                     <?php
+
+                    $path = $_SERVER['DOCUMENT_ROOT'];
+
+                    include_once $path . '/wp-config.php';
+                    include_once $path . '/wp-load.php';
+                    include_once $path . '/wp-includes/wp-db.php';
+                    include_once $path . '/wp-includes/pluggable.php';
                     $res=array();
                     global $wpdb;
+
                      $result=$wpdb->get_results('SELECT company, COUNT(*) FROM wp_hirad_shoping GROUP BY company HAVING COUNT(*) > 1
 ');
                     if ($result->num_rows > 0) {
