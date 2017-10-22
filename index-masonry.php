@@ -96,7 +96,42 @@
                   <div class='box_shop_brand'>
                   <div>{$row->company}</div>
                   
-                  </div> </div> </div> </li>";
+                  </div> </div> 
+                  
+                  <ul class='cbp-pgoptions'>
+					<li class='cbp-pgoptcompare'>Compare</li>
+					<li class='cbp-pgoptfav'>Favorite</li>
+					<li class='cbp-pgoptsize'>								
+						<span data-size='XL'>XL</span>
+						<div class='cbp-pgopttooltip'>
+							<span data-size='XL'>XL</span>
+							<span data-size='L'>L</span>
+							<span data-size='M'>M</span>
+							<span data-size='S'>S</span>
+						</div>
+					</li>
+					<li class='cbp-pgoptcolor\'>
+						<span data-color='c1'>Blue</span>
+						<div class='cbp-pgopttooltip'>
+							<span data-color='c1'>Blue</span>
+							<span data-color='c2'>Pink</span>
+							<span data-color='c3'>Orange</span>
+							<span data-color='c4'>Green</span>
+						</div>
+					</li>
+					<li class='cbp-pgoptcart'></li>
+				</ul><!-- cbp-pgoptions -->
+			</div><!-- cbp-pgcontent -->
+			<div class='cbp-pginfo'>
+				<h3>Save my trees</h3>
+				<span class='cbp-pgprice'>$29</span>
+			</div>
+                   </li>
+                   	</ul><!-- /cbp-pggrid -->
+</div><!-- /cbp-pgcontainer -->
+                   
+                   
+                   ";
 
         }?>
 
@@ -162,43 +197,10 @@
 				</div>
 					
 				</div><!-- /cbp-pgitem -->
-				<ul class="cbp-pgoptions">
-					<li class="cbp-pgoptcompare">Compare</li>
-					<li class="cbp-pgoptfav">Favorite</li>
-					<li class="cbp-pgoptsize">								
-						<span data-size="XL">XL</span>
-						<div class="cbp-pgopttooltip">
-							<span data-size="XL">XL</span>
-							<span data-size="L">L</span>
-							<span data-size="M">M</span>
-							<span data-size="S">S</span>
-						</div>
-					</li>
-					<li class="cbp-pgoptcolor">
-						<span data-color="c1">Blue</span>
-						<div class="cbp-pgopttooltip">
-							<span data-color="c1">Blue</span>
-							<span data-color="c2">Pink</span>
-							<span data-color="c3">Orange</span>
-							<span data-color="c4">Green</span>
-						</div>
-					</li>
-					<li class="cbp-pgoptcart"></li>
-				</ul><!-- cbp-pgoptions -->
-			</div><!-- cbp-pgcontent -->
-			<div class="cbp-pginfo">
-				<h3>Save my trees</h3>
-				<span class="cbp-pgprice">$29</span>
-			</div>
-		</li>
-		<li>
-			<!-- ... -->
-		</li>
-		<li>
-			<!-- ... -->
-		</li>
-	</ul><!-- /cbp-pggrid -->
-</div><!-- /cbp-pgcontainer -->
+
+
+
+
 
 	<hr>
 
