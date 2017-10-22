@@ -90,115 +90,53 @@
         global $wpdb;
         $result = $wpdb->get_results( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='Wood floor' GROUP BY company" );
         foreach ($result as $row){
-            echo "<li><div class='cbp-pgcontent'>
-                  <span class='cbp-pgrotate'>Rotate Item</span>
-                  <div class='cbp-pgitem'>
-                  <div class='box_shop_brand'>
-                  <div>{$row->company}</div>
+            echo "<li>
+                   <div class='cbp-pgcontent'>
+                      <span class='cbp-pgrotate'>Rotate Item</span>
+                      <div class='cbp-pgitem'>
+                          <div class='box_shop_brand'>
+                            <div>{$row->company}</div>
+                          </div> 
+                      </div> 
+                      <ul class='cbp-pgoptions'>
+                            <li class='cbp-pgoptcompare'>Compare</li>
+                            <li class='cbp-pgoptfav'>Favorite</li>
+                            <li class='cbp-pgoptsize'>
+                                <span data-size='XL'>XL</span>
+                                <div class='cbp-pgopttooltip'>
+                                    <span data-size='XL'>XL</span>
+                                    <span data-size='L'>L</span>
+                                    <span data-size='M'>M</span>
+                                    <span data-size='S'>S</span>
+                                </div>
+                            </li>
+                            <li class='cbp-pgoptcolor\'>
+                                <span data-color='c1'>Blue</span>
+                                <div class='cbp-pgopttooltip'>
+                                    <span data-color='c1'>Blue</span>
+                                    <span data-color='c2'>Pink</span>
+                                    <span data-color='c3'>Orange</span>
+                                    <span data-color='c4'>Green</span>
+                                </div>
+                            </li>
+                            <li class='cbp-pgoptcart'></li>
+                      </ul>
+                   </div>
+                   <div class='cbp-pginfo'>
+                        <h3>Save my trees</h3>
+                        <span class='cbp-pgprice'>$29</span>
+                   </div> 
+                   
                   
-                  </div> </div> 
-                  
-                  <ul class='cbp-pgoptions'>
-					<li class='cbp-pgoptcompare'>Compare</li>
-					<li class='cbp-pgoptfav'>Favorite</li>
-					<li class='cbp-pgoptsize'>								
-						<span data-size='XL'>XL</span>
-						<div class='cbp-pgopttooltip'>
-							<span data-size='XL'>XL</span>
-							<span data-size='L'>L</span>
-							<span data-size='M'>M</span>
-							<span data-size='S'>S</span>
-						</div>
-					</li>
-					<li class='cbp-pgoptcolor\'>
-						<span data-color='c1'>Blue</span>
-						<div class='cbp-pgopttooltip'>
-							<span data-color='c1'>Blue</span>
-							<span data-color='c2'>Pink</span>
-							<span data-color='c3'>Orange</span>
-							<span data-color='c4'>Green</span>
-						</div>
-					</li>
-					<li class='cbp-pgoptcart'></li>
-				</ul><!-- cbp-pgoptions -->
-			</div><!-- cbp-pgcontent -->
-			<div class='cbp-pginfo'>
-				<h3>Save my trees</h3>
-				<span class='cbp-pgprice'>$29</span>
-			</div>
-                  
-                   	</ul><!-- /cbp-pggrid -->
-</div><!-- /cbp-pgcontainer -->
-                    </li>
+                  </li>
                    
                    ";
 
         }?>
 
 
-
-
-		<!--<li>
-			<div class="cbp-pgcontent">
-                <span id="blb_rotate" class="cbp-pgrotate">Rotate Item</span>
-                    <div  class="cbp-pgitem">
-				<div id="brand_rotate" class="box_shop_brand"  >
-
-					<!--<div>Esil</div>
-					<div>
-
-					<ul style="display: flex">
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
-						</li>
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
-						</li>
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
-						</li>
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
-						</li>
-
-					</ul>
-						<ul style="display: flex;margin-top: -81px">
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
-						</li>
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
-						</li>
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
-						</li>
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
-						</li>
-
-					</ul>
-					<ul style="display: flex;margin-top: -81px">
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
-						</li>
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
-						</li>
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
-						</li>
-						<li>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
-						</li>
-
-					</ul>
-
-					</div>--!>
-				</div>
-					
-				</div><!-- /cbp-pgitem -->
-
-
+</ul>
+</div>
 
 
 
