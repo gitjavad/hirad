@@ -17,7 +17,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 
 	
 	
- brn_rot.on("click",'div',function(event){
+ brn_rot.on("click",'div.brand_rotate',function(event){
      event.preventDefault();
 
      var brand=$(event.target).children();
