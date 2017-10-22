@@ -80,7 +80,7 @@
 <div id="cbp-pgcontainer" class="cbp-pgcontainer">
 	<ul class="cbp-pggrid">
         <?php
-        echo "<script>console.log('".plugins_url('hirad_shoping')."')</script>";
+        echo "<script>console.log('".plugins_url('hirad_shoping','img')."')</script>";
         $res=array();
         global $wpdb;
         $result = $wpdb->get_results( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='Wood floor' GROUP BY company" );
