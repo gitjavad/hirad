@@ -80,6 +80,7 @@
 <div id="cbp-pgcontainer" class="cbp-pgcontainer">
 	<ul class="cbp-pggrid">
         <?php
+        echo "<script>console.log('".plugins_url('hirad_shoping')."')</script>";
         $res=array();
         global $wpdb;
         $result = $wpdb->get_results( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='Wood floor' GROUP BY company" );
@@ -90,13 +91,15 @@
                       <div class='cbp-pgitem'>
                           <div class='box_shop_brand'>
                             <div>{$row->company}</div>
-                            <div>";
+                            <div>
+                                <ul>";
             $result2=$wpdb->get_results( "SELECT * FROM wp_hirad_shoping WHERE company='".$row->company."'" );
             foreach ($result2 as $row2){
-                array_push($res,$row2->sn);
 
-            }echo "<script>console.log(".json_encode($res).")</script>";
-                      echo      "</div>
+                echo "<li><img src='".$row2->sn."'></li>";
+
+            }
+                      echo      " </ul></div>
                           </div> 
                       </div> 
                       <ul class='cbp-pgoptions'>
