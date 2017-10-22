@@ -17,7 +17,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 
 	
 	
- blb_rotate.on("click",'div',function(eveny){
+ blb_rotate.on("click",'div',function(event){
      event.preventDefault();
 
      var blb_rotate=$(event.target).children();
