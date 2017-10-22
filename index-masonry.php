@@ -91,7 +91,7 @@
                        array_push($res,$res=$row->company);
 
                     }
-                    echo "<p>{json_encode($res)}</p>";
+                   printf( "<p>".json_encode($res)."</p>");
 
 
 
