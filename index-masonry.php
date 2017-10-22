@@ -93,14 +93,14 @@
                             <div>{$row->company}</div>
                             <div>
                                 <ul>";
-            $result2=$wpdb->get_results( "SELECT * FROM wp_hirad_shoping WHERE company='".$row->company."'" );
+            /*$result2=$wpdb->get_results( "SELECT * FROM wp_hirad_shoping WHERE company='".$row->company."'" );
             foreach ($result2 as $row2){
 
 
 
             }
 
-            echo "<li><img src='".$plug_url."/img/".$row2->sn."'></li>";
+            echo "<li><img src='".$plug_url."/img/".$row2->sn."'></li>";*/
 
             echo "<script>
                     function set_img_product(txt_brand) {
