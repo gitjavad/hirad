@@ -85,7 +85,8 @@
 				<div id="brand_rotate" class="box_shop_brand"  >
                     <?php
                     $res=array();
-                     $result=$GLOBALS ['wpdb']->get_results('SELECT company, COUNT(*) FROM wp_hirad_shoping GROUP BY company HAVING COUNT(*) > 1
+                    global $wpdb;
+                     $result=$wpdb->get_results('SELECT company, COUNT(*) FROM wp_hirad_shoping GROUP BY company HAVING COUNT(*) > 1
 ');
                     if ($result->num_rows > 0) {
 
