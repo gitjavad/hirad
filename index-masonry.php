@@ -104,7 +104,7 @@
                                     <span data-size='S'>S</span>
                                 </div>
                             </li>
-                            <li class='cbp-pgoptcolor\'>
+                            <li class='cbp-pgoptcolor'>
                                 <span data-color='c1'>Blue</span>
                                 <div class='cbp-pgopttooltip'>
                                     <span data-color='c1'>Blue</span>
