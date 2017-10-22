@@ -83,9 +83,10 @@
                 <span id="blb_rotate" class="cbp-pgrotate">Rotate Item</span>
                     <div  class="cbp-pgitem">
 				<div id="brand_rotate" class="box_shop_brand"  >
-					<div>Esil</div>
-					<div>	
-					
+
+					<!--<div>Esil</div>
+					<div>
+
 					<ul style="display: flex">
 						<li>
 							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
@@ -99,7 +100,7 @@
 						<li>
 							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
 						</li>
-						
+
 					</ul>
 						<ul style="display: flex;margin-top: -81px">
 						<li>
@@ -114,7 +115,7 @@
 						<li>
 							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
 						</li>
-						
+
 					</ul>
 					<ul style="display: flex;margin-top: -81px">
 						<li>
@@ -129,10 +130,10 @@
 						<li>
 							<img src="<?php echo get_template_directory_uri(); ?>/images/esil_3.jpg" width="50pxpx" height="50px">
 						</li>
-						
+
 					</ul>
-					
-					</div>
+
+					</div>--!>
 				</div>
 					
 				</div><!-- /cbp-pgitem -->
