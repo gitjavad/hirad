@@ -96,7 +96,7 @@
             $result2=$wpdb->get_results( "SELECT * FROM wp_hirad_shoping WHERE company='".$row->company."'" );
             foreach ($result2 as $row2){
 
-                echo "<li><img src='".$plug_url."/img".$row2->sn."'></li>";
+                echo "<li><img src='".$plug_url."/img/".$row2->sn."'></li>";
 
             }
                       echo      " </ul></div>
