@@ -20,15 +20,15 @@ document.getElementById("logo_home").style.cssText = 'display:none';
  brn_rot.on("click",'div',function(event){
      event.preventDefault();
 
-     var blb_rotate=$(event.target).children();
-	  if( blb_rotate.getAttribute ( 'data-open' ) === 'open' ) {
-				blb_rotate.setAttribute( 'data-open', '' );
-				blb_rotate.className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
+     var brand=$(event.target).children();
+	  if( brand.getAttribute ( 'data-open' ) === 'open' ) {
+				brand.setAttribute( 'data-open', '' );
+				brand.className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
 
 			}
 			else {
-         blb_rotate.setAttribute( 'data-open', 'open' );
-        blb_rotate.className += ' box_shop_rotate';
+         brand.setAttribute( 'data-open', 'open' );
+        brand.className += ' box_shop_rotate';
 				
 			}
 	 
