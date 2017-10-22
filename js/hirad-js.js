@@ -21,7 +21,8 @@ document.getElementById("logo_home").style.cssText = 'display:none';
      event.preventDefault();
 
      var brand=$(event.target).children();
-	  if( brand.getAttribute ( 'data-open' ) === 'open' ) {
+     console.log(brand.className)
+	  /*if( brand.getAttribute ( 'data-open' ) === 'open' ) {
 				brand.setAttribute( 'data-open', '' );
 				brand.className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
 
@@ -30,7 +31,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
          brand.setAttribute( 'data-open', 'open' );
         brand.className += ' box_shop_rotate';
 				
-			}
+			}*/
 	 
   });
 	 
