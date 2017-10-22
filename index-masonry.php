@@ -86,10 +86,13 @@
                     <?php
                     $res=array();
                     global $wpdb;
-                    $user_count = $wpdb->get_var( "SELECT COUNT(*), company FROM wp_hirad_shoping GROUP BY company",1,1 );
+                    $result = $wpdb->get_results( "SELECT COUNT(*), company FROM wp_hirad_shoping GROUP BY company" );
+                    foreach ($result as $row){
+                        echo "<p>User count is {$row->company}</p>";
+                    }
 
 
-                    echo "<p>User count is {$user_count}</p>";
+
 
 
                     ?>
