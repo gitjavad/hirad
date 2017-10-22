@@ -90,16 +90,16 @@
                     if ($result->num_rows > 0) {
 
                          while($row = $result->fetch_assoc()) {
-                            array_push($res,$row['company']);
 
+                             echo "<script>console.log('".$row['company']."')</script>";
 
                               }
                     } else {
 
 
                         }
-                        $total_res=json_encode($res);
-                    echo "<script>console.log('".$total_res."')</script>";
+
+
                     ?>
 					<!--<div>Esil</div>
 					<div>
