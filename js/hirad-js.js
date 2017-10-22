@@ -15,7 +15,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 	var brn_rot =$(".blb_rotate");
 
 
-    var brand_div=document.getAnonymousElementByAttribute('div','data-parentdiv','1')
+    var brand=document.getElementById('brand_rotate')
  console.log(brand_div.className)
  brn_rot.on("click",function(event){
      event.preventDefault();
