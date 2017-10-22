@@ -99,7 +99,7 @@
                             $res[]=$row['company'];
                         }
                     echo "<script>console.log('".json_encode($res)."')</script>";
-                    echo "<script>console.log('". $db_table_name."')</script>";
+                    echo "<script>console.log('". $wpdb->print_error()."')</script>";
 
                     ?>
 					<!--<div>Esil</div>
