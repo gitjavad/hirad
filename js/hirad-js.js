@@ -13,20 +13,22 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 
     });
 	var brn_rot =$(".brand_rotate");
-	
-	var blb_rotate=$('.blb_rotate');
-	
-	
- blb_rotate.on("click",'div',function(e){
 
-	  if( e.child().getAttribute ( 'data-open' ) === 'open' ) {
-				e.child().setAttribute( 'data-open', '' );
-				e.child().className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
+
+	
+	
+ blb_rotate.on("click",'div',function(eveny){
+     event.preventDefault();
+
+     var blb_rotate=$(event.target).children();
+	  if( blb_rotate.getAttribute ( 'data-open' ) === 'open' ) {
+				blb_rotate.setAttribute( 'data-open', '' );
+				blb_rotate.className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
 
 			}
 			else {
-          e.child().setAttribute( 'data-open', 'open' );
-         e.child().className += ' box_shop_rotate';
+         blb_rotate.setAttribute( 'data-open', 'open' );
+        blb_rotate.className += ' box_shop_rotate';
 				
 			}
 	 
