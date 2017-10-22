@@ -93,6 +93,8 @@
                     include_once $path . '/wp-includes/pluggable.php';
                     $res=array();
                     global $wpdb;
+                    $wpdb = new wpdb( DB_USER, DB_PASSWORD, DB_NAME, DB_HOST);
+
                     $db_table_name = $wpdb->prefix . 'hirad_shoping';
                     $result= $wpdb->get_results( $wpdb->prepare("SELECT company, COUNT(*) FROM ".$db_table_name." GROUP BY company HAVING COUNT(*) > 1"),ABDAY_1);
                         foreach ($result as $row){
