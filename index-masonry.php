@@ -84,26 +84,9 @@
                     <div  class="cbp-pgitem">
 				<div id="brand_rotate" class="box_shop_brand"  >
                     <?php
-
-                    $path = $_SERVER['DOCUMENT_ROOT'];
-
-                    include_once $path . '/wp-config.php';
-                    include_once $path . '/wp-load.php';
-                    include_once $path . '/wp-includes/wp-db.php';
-                    include_once $path . '/wp-includes/pluggable.php';
                     $res=array();
                     global $wpdb;
 
-                    $db_table_name = $wpdb->prefix . 'hirad_shoping';
-                    $sql="SELECT company, COUNT(*) FROM ".$db_table_name." GROUP BY company HAVING COUNT(*) > 1";
-                    $result= $wpdb->get_results( $wpdb->prepare($sql));
-                    foreach ($result as $row){
-                            $res[]=$row['company'];
-                        }
-                    $wpdb -> show_errors ();
-                    $wpdb -> get_results ($wpdb -> prepare($sql));
-
-                    echo "<script>console.log('".json_encode($wpdb -> print_error ())."')</script>";
 
 
                     ?>
