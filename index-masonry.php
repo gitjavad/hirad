@@ -86,7 +86,7 @@
                     <?php
                     $res=array();
                     global $wpdb;
-                    $result = $wpdb->get_results( "SELECT COUNT(*), company FROM wp_hirad_shoping GROUP BY company" );
+                    $result = $wpdb->get_results( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='Wood floor' GROUP BY company" );
                     foreach ($result as $row){
                        array_push($res,$row->company);
 
