@@ -17,16 +17,16 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 	var blb_rotate=$('.blb_rotate');
 	
 	
- blb_rotate.on("click",'brn_rot',function(e){
+ blb_rotate.on("click",'div',function(e){
 
 	  if( $(this).getAttribute ( 'data-open' ) === 'open' ) {
-				e.toggle().setAttribute( 'data-open', '' );
-				e.toggle().className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
+				e.child().setAttribute( 'data-open', '' );
+				e.child().className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
 
 			}
 			else {
-          e.toggle().setAttribute( 'data-open', 'open' );
-         e.toggle().className += ' box_shop_rotate';
+          e.child().setAttribute( 'data-open', 'open' );
+         e.child().className += ' box_shop_rotate';
 				
 			}
 	 
