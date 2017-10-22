@@ -16,11 +16,11 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 
 
     var brand=document.getElementsByClassName('brand_rotate')
-	
+    console.log($('div[class=cbp-pgitem]').className)
  brn_rot.on("click",function(event){
      event.preventDefault();
 
-     console.log($('div[class=cbp-pgitem]').className)
+
 
 	  /*if( brand.getAttribute ( 'data-open' ) === 'open' ) {
 				brand.setAttribute( 'data-open', '' );
