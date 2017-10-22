@@ -76,28 +76,34 @@
 
 
 	<hr>
+
+
+
+
+
+
+    ?>
 <div id="cbp-pgcontainer" class="cbp-pgcontainer">
 	<ul class="cbp-pggrid">
-		<li>
+        <?php
+        $res=array();
+        global $wpdb;
+        $result = $wpdb->get_results( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='Wood floor' GROUP BY company" );
+        foreach ($result as $row){
+            echo "<li><div class='cbp-pgcontent'>
+                  <span class='cbp-pgrotate'>Rotate Item</span>
+                  <div class='cbp-pgitem'>
+                  <div class='box_shop_brand'>
+                  <div>{$row->company}</div>
+                  </div> </div> </div> </li>";
+
+        }?>
+		<!--<li>
 			<div class="cbp-pgcontent">
                 <span id="blb_rotate" class="cbp-pgrotate">Rotate Item</span>
                     <div  class="cbp-pgitem">
 				<div id="brand_rotate" class="box_shop_brand"  >
-                    <?php
-                    $res=array();
-                    global $wpdb;
-                    $result = $wpdb->get_results( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='Wood floor' GROUP BY company" );
-                    foreach ($result as $row){
-                       array_push($res,$row->company);
 
-                    }
-                  echo "<script>console.log('".json_encode($res)."')</script>";
-
-
-
-
-
-                    ?>
 					<!--<div>Esil</div>
 					<div>
 
