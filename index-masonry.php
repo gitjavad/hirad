@@ -94,7 +94,7 @@ function set_img_product(pr_brand) {
   
 }
 </script>";
-                 echo "<script>console.log('".$brand."')</script>";
+
                  echo "    <div class='cbp-pgitem'>
                           <div class='box_shop_brand'>
                             <div>{$row->company}</div>
