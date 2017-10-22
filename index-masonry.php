@@ -94,18 +94,10 @@
                     $res=array();
                     global $wpdb;
                     $db_table_name = $wpdb->prefix . 'wp_hirad_shoping';
-                    $holder = "%s";
-
-
-
-
-
-
                     $result= $wpdb->get_results( $wpdb->prepare("SELECT company, COUNT(*) FROM ".$db_table_name." GROUP BY company HAVING COUNT(*) > 1"),ABDAY_1);
                         foreach ($result as $row){
-                            $res[]=$res['company'];
+                            $res[]=$row['company'];
                         }
-
                     echo "<script>console.log('".json_encode($res)."')</script>";
 
 
