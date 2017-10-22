@@ -14,18 +14,19 @@ document.getElementById("logo_home").style.cssText = 'display:none';
     });
 	var brn_rot =$(".brand_rotate");
 	
+	var blb_rotate=$('.blb_rotate');
 	
 	
-	
-  document.getElementById("blb_rotate").addEventListener("click",function(){
-	  if( brn_rot.getAttribute ( 'data-open' ) === 'open' ) {
-				brn_rot.setAttribute( 'data-open', '' );
-				brn_rot.className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
+ blb_rotate.on("click",'brn_rot',function(){
+
+	  if( $(this).getAttribute ( 'data-open' ) === 'open' ) {
+				$(this).setAttribute( 'data-open', '' );
+				$(this).className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
 
 			}
 			else {
-				brn_rot.setAttribute( 'data-open', 'open' );
-				 brn_rot.className += ' box_shop_rotate';
+          $(this).setAttribute( 'data-open', 'open' );
+          $(this).className += ' box_shop_rotate';
 				
 			}
 	 
