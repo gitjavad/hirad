@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
 document.getElementById("logo_home").style.cssText = 'display:none';
 
     });
-	var brn_rot =$("#brand_rotate");
+	var brn_rot =$(".brand_rotate");
 	
 	
 	
