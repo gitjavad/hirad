@@ -90,6 +90,13 @@
                       <div class='cbp-pgitem'>
                           <div class='box_shop_brand'>
                             <div>{$row->company}</div>
+                            <div>";
+            $result2=$wpdb->get_results( "SELECT * FROM wp_hirad_shoping WHERE company='".$row->company."'" );
+            foreach ($result2 as $row2){
+                array_push($res,$row2->sn);
+
+            }echo "<script>console.log(".json_encode($res).")</script>";
+                      echo      "</div>
                           </div> 
                       </div> 
                       <ul class='cbp-pgoptions'>
