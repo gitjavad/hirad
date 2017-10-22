@@ -80,8 +80,8 @@
 	<ul class="cbp-pggrid">
 		<li>
 			<div class="cbp-pgcontent">
-				<span id="" class="blb_rotate cbp-pgrotate">Rotate Item
-                    <div  class="cbp-pgitem"></span>
+                <span id="" class="blb_rotate cbp-pgrotate">Rotate Item</span>
+                    <div  class="cbp-pgitem">
 				<div class="brand_rotate box_shop_brand">
 					<div>Esil</div>
 					<div>	
