@@ -93,8 +93,10 @@
                     include_once $path . '/wp-includes/pluggable.php';
                     $res=array();
                     global $wpdb;
+                    echo "<script>console.log('".$path."')</script>";
 
-                     $result=$wpdb->get_results('SELECT company, COUNT(*) FROM wp_hirad_shoping GROUP BY company HAVING COUNT(*) > 1
+
+                    $result=$wpdb->get_results('SELECT company, COUNT(*) FROM wp_hirad_shoping GROUP BY company HAVING COUNT(*) > 1
 ');
                     if ($result->num_rows > 0) {
 
