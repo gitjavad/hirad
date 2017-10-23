@@ -96,9 +96,10 @@
                                 <ul>";
                  $brand="<script type='text/javascript'>
                             $('.bk_blb').on('click','div',function(e) {
-                                console.log(e.target.hasChildNodes());
+                                return e.target.hasChildNodes()
                             })
                             </script>";
+                 echo $brand;
             /*$result2=$wpdb->get_results( "SELECT * FROM wp_hirad_shoping WHERE company='".$row->company."'" );
             foreach ($result2 as $row2){
 
