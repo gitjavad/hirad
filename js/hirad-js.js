@@ -49,7 +49,7 @@ var img_list=[];
             }
 
         })
-        console.log(img_list)
+        console.log(img_list.length)
         if( mybrand.getAttribute ( 'data-open' ) === 'open' ) {
             mybrand.setAttribute( 'data-open', '' );
             mybrand.className = mybrand.className.replace(/\b box_shop_rotate\b/,'');
