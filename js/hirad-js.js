@@ -67,6 +67,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
                 b=c+3
                 o=c
             }
+            counter=counter+1
         }
         if( mybrand.getAttribute ( 'data-open' ) === 'open' ) {
             mybrand.setAttribute( 'data-open', '' );
