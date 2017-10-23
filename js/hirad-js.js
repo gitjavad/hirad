@@ -1,5 +1,6 @@
 jQuery(document).ready(function($){
   var icon = document.getElementById("icon_list");
+  var mydf=10;
     document.getElementById("shoping-content").style.cssText= 'display:none' ;
     $("#shoping").click(function() {
         icon.remove();
@@ -35,7 +36,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
     $('.bk_blb').on('click',function (e) {
         e.preventDefault();
        console.log( e.target.nextElementSibling.lastElementChild.firstElementChild.innerHTML)
-        console.log(myd);
+
     })
 
     $( window ).on( "orientationchange", function( event ) {
