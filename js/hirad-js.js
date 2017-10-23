@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
   var icon = document.getElementById("icon_list");
 
-
+    var child_ul
 
     document.getElementById("shoping-content").style.cssText= 'display:none' ;
     $("#shoping").click(function() {
@@ -42,8 +42,8 @@ document.getElementById("logo_home").style.cssText = 'display:none';
         var img_pr=e.target.nextElementSibling.lastElementChild.firstElementChild.nextElementSibling.firstElementChild
          var mybrand= e.target.nextElementSibling.lastElementChild;
         var ul_per= e.target.nextElementSibling.lastElementChild.firstElementChild.nextElementSibling;
-        /*img_pr.innerHTML=""*/
-        console.log(mybrand.child[0].className)
+        img_pr.innerHTML=""
+
         data_product.forEach(function (t) {
             if (t.company.toUpperCase()==mybrand_name.toUpperCase()){
                 img_list.push(t.sn)
@@ -51,7 +51,8 @@ document.getElementById("logo_home").style.cssText = 'display:none';
             }
 
         })
-        /*var count_ul=img_list.length/3
+
+        var count_ul=img_list.length/3
         count_ul=Math.ceil(count_ul)
         var counter=0
         var o,c,b
@@ -60,8 +61,9 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 
         while (counter<count_ul){
             ul_per.innerHTML+="<ul></ul>"
+            child_ul=ul_per.children
             for (o=c;o<b;o++ ){
-                ul_per.childNodes[counter].innerHTML+="<li><img src="+url_product+'/img/'+img_list[o]+" width=100px></li>"
+                child_ul[o].innerHTML+="<li><img src="+url_product+'/img/'+img_list[o]+" width=100px></li>"
             }
             if (b<img_list.length){
                 c=b
@@ -69,7 +71,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
                 o=c
             }
             counter=counter+1
-        }*/
+        }
         if( mybrand.getAttribute ( 'data-open' ) === 'open' ) {
             mybrand.setAttribute( 'data-open', '' );
             mybrand.className = mybrand.className.replace(/\b box_shop_rotate\b/,'');
