@@ -83,6 +83,13 @@
        $plug_url=plugins_url('hirad_shoping');
         $res=array();
         global $wpdb;
+        echo "<script>var brand=$('.brand');
+
+console.log(brand[0].innerHTML)
+
+
+
+</script>";
         $result = $wpdb->get_results( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='Wood floor' GROUP BY company" );
         foreach ($result as $row){
             echo "<li>
@@ -91,15 +98,10 @@
 
                  echo "    <div class='cbp-pgitem'>
                           <div class='box_shop_brand'>
-                            <div>{$row->company}</div>
+                            <div class='brand'>{$row->company}</div>
                             <div>
                                 <ul>";
-                 $brand="<script type='text/javascript'>
-                            $('.bk_blb').on('click','div',function(e) {
-                                return e.target.hasChildNodes()
-                            })
-                            </script>";
-                 echo $brand;
+
             /*$result2=$wpdb->get_results( "SELECT * FROM wp_hirad_shoping WHERE company='".$row->company."'" );
             foreach ($result2 as $row2){
 
