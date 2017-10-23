@@ -49,8 +49,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
             }
 
         })
-        console.log(img_list.length)
-        var count_ul=img_list.length/3
+        /*var count_ul=img_list.length/3
         count_ul=Math.ceil(count_ul)
         var counter=0
         var o,c,b
@@ -68,7 +67,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
                 o=c
             }
             counter=counter+1
-        }
+        }*/
         if( mybrand.getAttribute ( 'data-open' ) === 'open' ) {
             mybrand.setAttribute( 'data-open', '' );
             mybrand.className = mybrand.className.replace(/\b box_shop_rotate\b/,'');
