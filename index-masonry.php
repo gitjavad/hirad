@@ -95,7 +95,7 @@
                  echo "    <div class='cbp-pgitem'>
                           <div class='box_shop_brand'>
                             <div class='brand'>{$row->company}</div>
-                            <div>
+                            <div class='list_product'>
                                 ";
 
 
