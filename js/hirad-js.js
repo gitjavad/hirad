@@ -34,7 +34,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 
     $('.bk_blb').on('click',function (e) {
         e.preventDefault();
-       console.log( e.target.parentNode.className)
+       console.log( e.target.childNodes.className)
     })
 
     $( window ).on( "orientationchange", function( event ) {
