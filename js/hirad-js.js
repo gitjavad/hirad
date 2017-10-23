@@ -40,7 +40,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
         var mybrand = e.target.nextElementSibling.lastElementChild.firstElementChild.innerHTML
         var img_pr=e.target.nextElementSibling.lastElementChild.firstElementChild.nextElementSibling.firstElementChild
 
-
+        img_pr.innerHTML=""
         data_product.forEach(function (t) {
             if (t.company.toUpperCase()==mybrand.toUpperCase()){
 
