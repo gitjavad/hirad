@@ -43,7 +43,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
         data_product.forEach(function (t) {
             if (t.company.toUpperCase()==mybrand.toUpperCase()){
 
-                img_pr.innerHTML="<img src="+url_product+'/img/'+t.sn+">"
+                img_pr.innerHTML+="<img src="+url_product+'/img/'+t.sn+">"
             }
 
         })
