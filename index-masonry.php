@@ -80,8 +80,8 @@
 <div id="cbp-pgcontainer" class="cbp-pgcontainer">
 	<ul class="cbp-pggrid">
         <?php
-        $vg ="<script type='text/javascript'>document.write(mydf)</script>";
-        echo $vg;
+
+
        $plug_url=plugins_url('hirad_shoping');
         $res=array();
         global $wpdb;
@@ -96,16 +96,18 @@
                             <div class='brand'>{$row->company}</div>
                             <div>
                                 <ul>";
+                 $brand=$_GET['brand'];
+                 if (isset($brand)) {
 
-            /*$result2=$wpdb->get_results( "SELECT * FROM wp_hirad_shoping WHERE company='".$row->company."'" );
-            foreach ($result2 as $row2){
+                         $result2 = $wpdb->get_results("SELECT * FROM wp_hirad_shoping WHERE company='" . $brand . "'");
+                         foreach ($result2 as $row2) {
 
+                             echo "<li><img src='" . $plug_url . "/img/" . $row2->sn . "'></li>";
 
+                         }
 
-            }
-
-            echo "<li><img src='".$plug_url."/img/".$row2->sn."'></li>";*/
-
+                     }
+                 }
 
 
 
