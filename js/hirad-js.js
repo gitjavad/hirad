@@ -41,16 +41,33 @@ document.getElementById("logo_home").style.cssText = 'display:none';
         var mybrand_name = e.target.nextElementSibling.lastElementChild.firstElementChild.innerHTML
         var img_pr=e.target.nextElementSibling.lastElementChild.firstElementChild.nextElementSibling.firstElementChild
          var mybrand= e.target.nextElementSibling.lastElementChild;
+        var ul_per= e.target.nextElementSibling.lastElementChild.firstElementChild.nextElementSibling;
         img_pr.innerHTML=""
         data_product.forEach(function (t) {
             if (t.company.toUpperCase()==mybrand_name.toUpperCase()){
-
-                img_pr.innerHTML+="<li><img src="+url_product+'/img/'+t.sn+" width=100px></li>"
                 img_list.push(t.sn)
             }
 
         })
         console.log(img_list.length)
+        var count_ul=img_list.length/3
+        count_ul=Math.ceil(count_ul)
+        var counter=0
+        var o,c,b
+        c=0
+         b=c+3
+
+        while (counter<count_ul){
+            ul_per.innerHTML+="<ul></ul>"
+            for (o=c;o<b;o++ ){
+                ul_per.childNodes[counter].innerHTML+="<li><img src="+url_product+'/img/'+img_list[o]+" width=100px></li>"
+            }
+            if (b<img_list.length){
+                c=b
+                b=c+3
+                o=c
+            }
+        }
         if( mybrand.getAttribute ( 'data-open' ) === 'open' ) {
             mybrand.setAttribute( 'data-open', '' );
             mybrand.className = mybrand.className.replace(/\b box_shop_rotate\b/,'');

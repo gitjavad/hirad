@@ -96,14 +96,14 @@
                           <div class='box_shop_brand'>
                             <div class='brand'>{$row->company}</div>
                             <div>
-                                <ul>";
+                                ";
 
 
 
 
 
 
-                      echo      " </ul></div>
+                      echo      " </div>
                           </div> 
                       </div> 
                       <ul class='cbp-pgoptions'>
