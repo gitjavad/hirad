@@ -34,8 +34,9 @@ document.getElementById("logo_home").style.cssText = 'display:none';
         }
 
     });*/
-var img_list=[];
+
     $('.bk_blb').on('click',function (e) {
+        var img_list=[];
         e.preventDefault();
         var mybrand_name = e.target.nextElementSibling.lastElementChild.firstElementChild.innerHTML
         var img_pr=e.target.nextElementSibling.lastElementChild.firstElementChild.nextElementSibling.firstElementChild
