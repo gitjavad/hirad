@@ -54,12 +54,17 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 
         var count_ul=img_list.length/3
         count_ul=Math.ceil(count_ul)
+        for (var i=0;i<count_ul;i++){
+            ul_per.innerHTML+="<ul></ul>"
+        }
+
         var counter=0
         var o,c,b
         c=0
          b=c+3
 
-        while (counter<count_ul){
+
+/*        while (counter<count_ul){
             ul_per.innerHTML+="<ul></ul>"
             child_ul=ul_per.children
             for (o=c;o<b;o++ ){
@@ -71,7 +76,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
                 o=c
             }
             counter=counter+1
-        }
+        }*/
         if( mybrand.getAttribute ( 'data-open' ) === 'open' ) {
             mybrand.setAttribute( 'data-open', '' );
             mybrand.className = mybrand.className.replace(/\b box_shop_rotate\b/,'');
