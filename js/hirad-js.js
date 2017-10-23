@@ -54,6 +54,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 
         var count_ul=img_list.length/3
         count_ul=Math.ceil(count_ul)
+        ul_per.innerHTML=""
         for (var i=0;i<count_ul;i++){
             ul_per.innerHTML+="<ul></ul>"
         }
