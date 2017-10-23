@@ -1,10 +1,7 @@
 jQuery(document).ready(function($){
   var icon = document.getElementById("icon_list");
   var mydf=10;
-  function abas (md) {
-      md=mydf;
-        return md
-    }
+
     document.getElementById("shoping-content").style.cssText= 'display:none' ;
     $("#shoping").click(function() {
         icon.remove();

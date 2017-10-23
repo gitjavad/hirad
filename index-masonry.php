@@ -80,7 +80,7 @@
 <div id="cbp-pgcontainer" class="cbp-pgcontainer">
 	<ul class="cbp-pggrid">
         <?php
-        $vg ="<script>abas()</script>";
+        $vg ="<script>document.write(mydf)</script>";
         echo $vg;
        $plug_url=plugins_url('hirad_shoping');
         $res=array();
