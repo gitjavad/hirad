@@ -87,13 +87,18 @@
         foreach ($result as $row){
             echo "<li>
                    <div class='cbp-pgcontent'>
-                      <span class='cbp-pgrotate'>Rotate Item</span>";
+                      <span class='bk_blb cbp-pgrotate'>Rotate Item</span>";
 
                  echo "    <div class='cbp-pgitem'>
                           <div class='box_shop_brand'>
                             <div>{$row->company}</div>
                             <div>
                                 <ul>";
+                 $brand="<script type='text/javascript'>
+                            $('.bk_blb').on('click','div',function(e) {
+                                console.log(e.target.hasChildNodes());
+                            })
+                            </script>";
             /*$result2=$wpdb->get_results( "SELECT * FROM wp_hirad_shoping WHERE company='".$row->company."'" );
             foreach ($result2 as $row2){
 
