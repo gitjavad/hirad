@@ -83,20 +83,11 @@
        $plug_url=plugins_url('hirad_shoping');
         $res=array();
         global $wpdb;
-        echo "<script>
-$(document).ready(function() {
-  var brand=$('.brand');
-
-console.log(brand[0].innerHTML)
-
-})
-
-</script>";
         $result = $wpdb->get_results( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='Wood floor' GROUP BY company" );
         foreach ($result as $row){
             echo "<li>
                    <div class='cbp-pgcontent'>
-                      <span class='bk_blb cbp-pgrotate'>Rotate Item</span>";
+                      <span onclick='my_brand()' class='bk_blb cbp-pgrotate'>Rotate Item</span>";
 
                  echo "    <div class='cbp-pgitem'>
                           <div class='box_shop_brand'>
@@ -237,3 +228,15 @@ console.log(brand[0].innerHTML)
 	<?php get_sidebar('setting'); ?>
 
 <div class="modal" id="post-lightbox" tabindex="-1" aria-hidden="true" role="article"></div>
+    <?php echo "<script>
+        $(document).ready(function() {
+        function my_brand() {
+          var brand=$('.brand');
+
+          console.log(brand[0].innerHTML)
+        }
+            
+
+        })
+
+    </script>";?>
