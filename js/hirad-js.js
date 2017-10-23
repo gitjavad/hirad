@@ -39,15 +39,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
         var mybrand = e.target.nextElementSibling.lastElementChild.firstElementChild.innerHTML
 
 
-        $.ajax({
-            type: "POST",
-            url: 'hirad-co.com/index-masonry.php',
-            data:{brand:mybrand},
-            success:function(html) {
-                alert(html);
-            }
 
-        });
 
     })
 

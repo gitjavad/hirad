@@ -96,18 +96,9 @@
                             <div class='brand'>{$row->company}</div>
                             <div>
                                 <ul>";
-                 $brand=$_GET['brand'];
-                 if (isset($brand)) {
 
-                         $result2 = $wpdb->get_results("SELECT * FROM wp_hirad_shoping WHERE company='" . $brand . "'");
-                         foreach ($result2 as $row2) {
 
-                             echo "<li><img src='" . $plug_url . "/img/" . $row2->sn . "'></li>";
 
-                         }
-
-                     }
-                 }
 
 
 
@@ -148,7 +139,22 @@
                    
                    ";
 
-        }?>
+        }
+
+        $result2 = $wpdb->get_results("SELECT * FROM wp_hirad_shoping");
+          foreach ($result2 as $row2) {
+
+            array_push($res,$row2);
+
+
+
+
+  }
+
+echo "<script>console.log('".json_encode($res)."')</script>"
+
+
+        ?>
 
 
 </ul>
