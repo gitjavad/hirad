@@ -36,7 +36,18 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 
     $('.bk_blb').on('click',function (e) {
         e.preventDefault();
-       console.log( e.target.nextElementSibling.lastElementChild.firstElementChild.innerHTML)
+        var mybrand = e.target.nextElementSibling.lastElementChild.firstElementChild.innerHTML
+
+
+        $.ajax({
+            type: "POST",
+            url: 'hirad-co.com/index-masonry.php',
+            data:{brand:mybrand},
+            success:function(html) {
+                alert(html);
+            }
+
+        });
 
     })
 
