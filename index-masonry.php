@@ -151,7 +151,7 @@
 
   }
 
-echo "<script>var data_product=".json_encode($res)."</script>"
+echo "<script type='text/javascript'>var data_product=".json_encode($res)."</script>"
 
 
         ?>
