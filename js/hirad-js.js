@@ -45,7 +45,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
         data_product.forEach(function (t) {
             if (t.company.toUpperCase()==mybrand_name.toUpperCase()){
 
-                img_pr.innerHTML+="<img src="+url_product+'/img/'+t.sn+" width=250px>"
+                img_pr.innerHTML+="<img src="+url_product+'/img/'+t.sn+" width=100px>"
             }
 
         })
