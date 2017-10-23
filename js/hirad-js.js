@@ -1,12 +1,7 @@
 jQuery(document).ready(function($){
   var icon = document.getElementById("icon_list");
 
- data_product.forEach(function (t) {
-     if (t.company.toUpperCase()=='ESIL'){
-         console.log(t.sn)
-     }
 
- })
 
     document.getElementById("shoping-content").style.cssText= 'display:none' ;
     $("#shoping").click(function() {
@@ -43,8 +38,15 @@ document.getElementById("logo_home").style.cssText = 'display:none';
     $('.bk_blb').on('click',function (e) {
         e.preventDefault();
         var mybrand = e.target.nextElementSibling.lastElementChild.firstElementChild.innerHTML
+        var img_pr=e.target.nextElementSibling.lastElementChild.firstElementChild.nextElementSibling.firstElementChild
 
+        data_product.forEach(function (t) {
+            if (t.company.toUpperCase()==mybrand.toUpperCase()){
 
+                img_pr.innerHTML="<img src="+url_product+'/img/'+t.sn+">"
+            }
+
+        })
 
 
     })
