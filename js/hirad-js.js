@@ -51,7 +51,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
         })
         if( mybrand.getAttribute ( 'data-open' ) === 'open' ) {
             mybrand.setAttribute( 'data-open', '' );
-            mybrand.className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
+            mybrand.className = mybrand.className.replace(/\b box_shop_rotate\b/,'');
 
         }
         else {
