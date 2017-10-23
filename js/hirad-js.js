@@ -43,9 +43,11 @@ document.getElementById("logo_home").style.cssText = 'display:none';
          var mybrand= e.target.nextElementSibling.lastElementChild;
         var ul_per= e.target.nextElementSibling.lastElementChild.firstElementChild.nextElementSibling;
         img_pr.innerHTML=""
+        console.log(mybrand.childNodes[0].className)
         data_product.forEach(function (t) {
             if (t.company.toUpperCase()==mybrand_name.toUpperCase()){
                 img_list.push(t.sn)
+
             }
 
         })
