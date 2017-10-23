@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
   var icon = document.getElementById("icon_list");
 
  data_product.forEach(function (t) {
-     if (t.company==='Esil'){
+     if (t.company=='Esil'){
          console.log(t.sn)
      }
 
