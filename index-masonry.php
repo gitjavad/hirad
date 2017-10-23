@@ -80,6 +80,7 @@
 <div id="cbp-pgcontainer" class="cbp-pgcontainer">
 	<ul class="cbp-pggrid">
         <?php
+        echo "<script>var myd=10;</script>";
        $plug_url=plugins_url('hirad_shoping');
         $res=array();
         global $wpdb;
