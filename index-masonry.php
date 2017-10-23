@@ -87,15 +87,8 @@
         foreach ($result as $row){
             echo "<li>
                    <div class='cbp-pgcontent'>
-                      <span onclick='set_img_product(this)' class='cbp-pgrotate'>Rotate Item</span>";
-                 $brand="<script>
-                            function set_img_product(pr_brand) {
-                                var m_brand=pr_brand.innerHTML
-                                return m_brand;
-                              
-                            }
-                            </script>";
-echo "<script>console.log('".$brand."')</script>";
+                      <span class='cbp-pgrotate'>Rotate Item</span>";
+
                  echo "    <div class='cbp-pgitem'>
                           <div class='box_shop_brand'>
                             <div>{$row->company}</div>
