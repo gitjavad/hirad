@@ -37,18 +37,19 @@ document.getElementById("logo_home").style.cssText = 'display:none';
 
     $('.bk_blb').on('click',function (e) {
         e.preventDefault();
-        var mybrand = e.target.nextElementSibling.lastElementChild.firstElementChild.innerHTML
+        var mybrand_name = e.target.nextElementSibling.lastElementChild.firstElementChild.innerHTML
         var img_pr=e.target.nextElementSibling.lastElementChild.firstElementChild.nextElementSibling.firstElementChild
-
+         var mybrand= e.target.nextElementSibling.lastElementChild.className;
+        console.log(mybrand)
         img_pr.innerHTML=""
         data_product.forEach(function (t) {
-            if (t.company.toUpperCase()==mybrand.toUpperCase()){
+            if (t.company.toUpperCase()==mybrand_name.toUpperCase()){
 
                 img_pr.innerHTML+="<img src="+url_product+'/img/'+t.sn+">"
             }
 
         })
-        if( mybrand.getAttribute ( 'data-open' ) === 'open' ) {
+        /*if( mybrand.getAttribute ( 'data-open' ) === 'open' ) {
             mybrand.setAttribute( 'data-open', '' );
             mybrand.className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
 
@@ -57,7 +58,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
             mybrand.setAttribute( 'data-open', 'open' );
             mybrand.className += ' box_shop_rotate';
 
-        }
+        }  */
 
 
 
