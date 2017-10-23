@@ -33,7 +33,7 @@ document.getElementById("logo_home").style.cssText = 'display:none';
     });*/
 
     $('.bk_blb').on('click',function (e) {
-       console.log( this.toggle().parent().className())
+       console.log( this.parent().className)
     })
 
     $( window ).on( "orientationchange", function( event ) {
