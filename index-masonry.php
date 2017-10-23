@@ -83,11 +83,13 @@
        $plug_url=plugins_url('hirad_shoping');
         $res=array();
         global $wpdb;
-        echo "<script>var brand=$('.brand');
+        echo "<script>
+$(document).ready(function() {
+  var brand=$('.brand');
 
 console.log(brand[0].innerHTML)
 
-
+})
 
 </script>";
         $result = $wpdb->get_results( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='Wood floor' GROUP BY company" );
