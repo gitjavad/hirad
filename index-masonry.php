@@ -229,7 +229,7 @@
 
 <div class="modal" id="post-lightbox" tabindex="-1" aria-hidden="true" role="article"></div>
     <?php echo "<script>
-        $(document).ready(function() {
+        jQuery(document).ready(function($) {
         function my_brand() {
           var brand=$('.brand');
 
