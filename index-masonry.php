@@ -87,7 +87,7 @@
         foreach ($result as $row){
             echo "<li>
                    <div class='cbp-pgcontent'>
-                      <span onclick='my_brand()' class='bk_blb cbp-pgrotate'>Rotate Item</span>";
+                      <span class='bk_blb cbp-pgrotate'>Rotate Item</span>";
 
                  echo "    <div class='cbp-pgitem'>
                           <div class='box_shop_brand'>
@@ -228,15 +228,3 @@
 	<?php get_sidebar('setting'); ?>
 
 <div class="modal" id="post-lightbox" tabindex="-1" aria-hidden="true" role="article"></div>
-    <?php echo "<script>
-        jQuery(document).ready(function($) {
-        function my_brand() {
-          var brand=$('.brand');
-
-          console.log(brand[0].innerHTML)
-        }
-            
-
-        })
-
-    </script>";?>
