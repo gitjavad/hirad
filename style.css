@@ -4509,6 +4509,6 @@ margin-top: 20px;
 .list_product ul{
    display: flex;
 }
-.list_product li{
-    display: grid;
+.list_product li img {
+
 }
