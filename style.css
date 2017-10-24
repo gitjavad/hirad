@@ -4510,5 +4510,5 @@ margin-top: 20px;
    display: flex;
 }
 .list_product li{
-
+    display: grid;
 }
