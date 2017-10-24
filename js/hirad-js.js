@@ -63,13 +63,18 @@ document.getElementById("logo_home").style.cssText = 'display:none';
         var o,c,b
         c=0
          b=c+3
-
+var b_d=0
 
         while (counter<count_ul){
             child_ul=ul_per.children
             for (o=c;o<b;o++ ){
-                child_ul[counter].innerHTML+="<li><img src="+url_product+'/img/'+img_list[o]+" width=100px></li>"
+
+                if (b_d<img_list.length){
+                    child_ul[counter].innerHTML+="<li><img src="+url_product+'/img/'+img_list[o]+" width=100px></li>"
+                }
+                b_d=d_d+1;
             }
+
             if (b<img_list.length){
                 c=b
                 b=c+3
