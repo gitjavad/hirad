@@ -4506,6 +4506,9 @@ margin-top: 20px;
     /* margin-left: -204px; */
     margin-right: 10px;
 }
+.list_product{
+    overflow: scroll;
+}
 .list_product ul{
    display: flex;
     line-height: 0px;
