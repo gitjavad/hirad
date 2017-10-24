@@ -72,7 +72,7 @@ var b_d=0
                 if (b_d<img_list.length){
                     child_ul[counter].innerHTML+="<li><img src="+url_product+'/img/'+img_list[o]+" width=100px></li>"
                 }
-                b_d=d_d+1;
+                b_d=b_d+1;
             }
 
             if (b<img_list.length){
