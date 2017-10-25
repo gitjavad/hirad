@@ -78,7 +78,7 @@
 	<hr>
 
 <div id="cbp-pgcontainer" class="cbp-pgcontainer">
-	<ul id="main_shop" class=" cbp-pggrid">
+	<ul  class="main_shop cbp-pggrid">
 
 
 
