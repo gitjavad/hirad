@@ -7,8 +7,7 @@
  */
 $category=$_GET['cat'];
 
-       $plug_url=plugins_url('hirad_shoping');
-       echo "<script>var url_product='".$plug_url."'</script>";
+
 $s_key=$_POST['key'];
 $hostname="localhost";
 $user = "hirad_admin15023";
