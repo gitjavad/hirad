@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
   var icon = document.getElementById("icon_list");
-
+var csb='sd'
     var child_ul
 
     document.getElementById("shoping-content").style.cssText= 'display:none' ;
@@ -12,31 +12,10 @@ jQuery(document).ready(function($){
     });
 		$('.shoping_blb').on('click','h3',function (e) {
             e.preventDefault();
-            console.log(e.target.getAttribute('data-name'))
+        cbs=e.target.getAttribute('data-name')
+
         })
         $(".icon_div").append(icon);
-        /*
-document.getElementById("logo_home").style.cssText = 'display:none';
-
-    });
-    var brn_rot =document.getElementById("brand_rotate");
-
-
-
-
-    document.getElementById("blb_rotate").addEventListener("click",function(){
-        if( brn_rot.getAttribute ( 'data-open' ) === 'open' ) {
-            brn_rot.setAttribute( 'data-open', '' );
-            brn_rot.className = brn_rot.className.replace(/\b box_shop_rotate\b/,'');
-
-        }
-        else {
-            brn_rot.setAttribute( 'data-open', 'open' );
-            brn_rot.className += ' box_shop_rotate';
-
-        }
-
-    });*/
 
     $('.bk_blb').on('click',function (e) {
         var img_list=[];

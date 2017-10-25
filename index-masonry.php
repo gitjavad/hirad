@@ -53,7 +53,7 @@
 		<li> <a href="#"> <span class="cbp-ig-icon cbp-ig-icon-ribbon"></span>
 <h3 class="cbp-ig-title" data-name="Wall Panel">دیوارکوب</h3>
 <span class="cbp-ig-category">متریال</span> </a> </li>
-
+<?php echo "<script>csb</script>"?>
 		<li> <a href="#"> <span class="cbp-ig-icon cbp-ig-icon-milk"></span>
 <h3 class="cbp-ig-title" data-name="ابزار دکوراتیو">ابزار دکوراتیو</h3>
 <span class="cbp-ig-category">ابزار</span> </a> </li>
@@ -66,8 +66,8 @@
 <h3 class="cbp-ig-title" data-name="پارتیشن">پارتیشن</h3>
 <span class="cbp-ig-category">ابزار</span> </a> </li>
 
-		<li> <a href="#" data-name="Stone"> <span class="cbp-ig-icon cbp-ig-icon-doumbek"></span>
-<h3 class="cbp-ig-title">سنگ</h3>
+		<li> <a href="#" > <span class="cbp-ig-icon cbp-ig-icon-doumbek"></span>
+<h3 class="cbp-ig-title" data-name="Stone">سنگ</h3>
 <span class="cbp-ig-category">متریال </span> </a> </li>
 
 
