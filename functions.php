@@ -955,7 +955,7 @@ add_action('parse_request', 'ipin_parse_request');
 function ipin_enqueue_scripts() {
 	wp_enqueue_style('ipin-bootstrap', get_template_directory_uri() . '/css/bootstrap.css');
 	wp_enqueue_style('ipin-fontawesome', get_template_directory_uri() . '/css/font-awesome.min.css');
-	/*wp_enqueue_style('ipin-style', get_stylesheet_directory_uri() . '/style.css', array('ipin-bootstrap'));*/
+	wp_enqueue_style('ipin-style', get_stylesheet_directory_uri() . '/style.css', array('ipin-bootstrap'));
 	
 	if (of_get_option('color_scheme') == 'dark') {
 		wp_enqueue_style('ipin-style-dark', get_template_directory_uri() . '/style-dark.css', array('ipin-style'));
