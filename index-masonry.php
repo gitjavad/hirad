@@ -53,7 +53,9 @@
 		<li> <a href="#"> <span class="cbp-ig-icon cbp-ig-icon-ribbon"></span>
 <h3 class="cbp-ig-title" data-name="Wall Panel">دیوارکوب</h3>
 <span class="cbp-ig-category">متریال</span> </a> </li>
-<?php echo "<script>console.log(csb)</script>"?>
+<?php $erd=$_GET['cbs'];
+echo '<script>console.log('.$erd.')</script>'
+?>
 		<li> <a href="#"> <span class="cbp-ig-icon cbp-ig-icon-milk"></span>
 <h3 class="cbp-ig-title" data-name="ابزار دکوراتیو">ابزار دکوراتیو</h3>
 <span class="cbp-ig-category">ابزار</span> </a> </li>

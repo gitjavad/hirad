@@ -13,6 +13,9 @@ var csb='sd'
 		$('.shoping_blb').on('click','h3',function (e) {
             e.preventDefault();
         cbs=e.target.getAttribute('data-name')
+            $.ajax({
+                url:'../index.php?cbs='+cbs
+            })
 
         })
         $(".icon_div").append(icon);
