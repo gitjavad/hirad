@@ -13,9 +13,9 @@ var csb='sd'
 		$('.shoping_blb').on('click','h3',function (e) {
             e.preventDefault();
         cbs=e.target.getAttribute('data-name')
-            console.log(document.URL)
+
             $.ajax({
-                url:'../index.php?cbs='+cbs
+                url:document.URL+'/index.php?cbs='+cbs
             })
 
         })
