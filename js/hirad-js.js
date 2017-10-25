@@ -16,7 +16,7 @@ jQuery(document).ready(function($){
             console.log(cbs)
            /* $('#main_shop').load("../wp-content/themes/hirad-site/shoping.php");*/
 var node=document.getElementsByClassName('main_shop')
-            node[0].write('hi')
+            node[0].innerHTML('hi')
 
         })
         $(".icon_div").append(icon);
