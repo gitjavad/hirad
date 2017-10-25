@@ -10,7 +10,10 @@ jQuery(document).ready(function($){
             document.getElementById("rev_slider_1_2_wrapper").remove();
         document.getElementById("shoping-content").style.cssText = 'display:block !important';
     });
-		
+		$('.shoping_blb').on('click','h3',function (e) {
+            e.preventDefault();
+            console.log(e.target.getAttribute('data-name'))
+        })
         $(".icon_div").append(icon);
         /*
 document.getElementById("logo_home").style.cssText = 'display:none';

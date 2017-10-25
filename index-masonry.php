@@ -44,29 +44,29 @@
 	</ul>
 </div>
 	<hr>
-	<ul id="shoping-content" class="cbp-ig-grid animated slideInLeft ">
+	<ul id="shoping-content" class="shoping_blb cbp-ig-grid animated slideInLeft ">
 
 		<li> <a href="#"> <span class="cbp-ig-icon cbp-ig-icon-shoe"></span>
-<h3 class="cbp-ig-title">پارکت و کفپوش</h3>
+<h3 class="cbp-ig-title" data-name="wood floor">پارکت و کفپوش</h3>
 <span class="cbp-ig-category">متریال</span> </a> </li>
 
 		<li> <a href="#"> <span class="cbp-ig-icon cbp-ig-icon-ribbon"></span>
-<h3 class="cbp-ig-title">دیوارکوب</h3>
+<h3 class="cbp-ig-title" data-name="Wall Panel">دیوارکوب</h3>
 <span class="cbp-ig-category">متریال</span> </a> </li>
 
 		<li> <a href="#"> <span class="cbp-ig-icon cbp-ig-icon-milk"></span>
-<h3 class="cbp-ig-title">ابزار دکوراتیو</h3>
+<h3 class="cbp-ig-title" data-name="ابزار دکوراتیو">ابزار دکوراتیو</h3>
 <span class="cbp-ig-category">ابزار</span> </a> </li>
 
 		<li> <a href="#"> <span class="cbp-ig-icon cbp-ig-icon-whippy"></span>
-<h3 class="cbp-ig-title">نمای کلاسیک</h3>
+<h3 class="cbp-ig-title" data-name="نمای کلاسیک">نمای کلاسیک</h3>
 <span class="cbp-ig-category">ابزار</span> </a> </li>
 
 		<li> <a href="#"> <span class="cbp-ig-icon cbp-ig-icon-spectacles"></span>
-<h3 class="cbp-ig-title">پارتیشن</h3>
+<h3 class="cbp-ig-title" data-name="پارتیشن">پارتیشن</h3>
 <span class="cbp-ig-category">ابزار</span> </a> </li>
 
-		<li> <a href="#"> <span class="cbp-ig-icon cbp-ig-icon-doumbek"></span>
+		<li> <a href="#" data-name="Stone"> <span class="cbp-ig-icon cbp-ig-icon-doumbek"></span>
 <h3 class="cbp-ig-title">سنگ</h3>
 <span class="cbp-ig-category">متریال </span> </a> </li>
 
