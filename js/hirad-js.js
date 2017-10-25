@@ -73,7 +73,7 @@ var b_d=0
                     var text_sn=img_list[o].replace(".jpg","");
                     child_ul[counter].innerHTML+="<li><img src="+url_product+'/img/'+img_list[o]+" width=100%><p>"+text_sn+"</p></li>"
                 }else{
-                    child_ul[counter].innerHTML+="<li width='100%'></li>"
+                    child_ul[counter].innerHTML+="<li ></li>"
 
                 }
                 b_d=b_d+1;
