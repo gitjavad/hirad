@@ -5,13 +5,19 @@
  * Date: 10/25/2017 AD
  * Time: 19:44
  */
-
+$category=$_POST['cat'];
 
        $plug_url=plugins_url('hirad_shoping');
        echo "<script>var url_product='".$plug_url."'</script>";
+$s_key=$_POST['key'];
+$hostname="localhost";
+$user = "hirad_admin15023";
+$pass= "9133647736!@#";
+$mysql_database = "hirad-co_com_site";
+$conn = new mysqli($hostname, $user, $pass, $mysql_database);
+mysqli_set_charset($conn,'utf8');
         $res=array();
-        global $wpdb;
-        $result = $wpdb->get_results( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='Wood floor' GROUP BY company" );
+        $result = $conn->query( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='".$category."' GROUP BY company" );
         foreach ($result as $row){
             echo "<li>
                    <div class='cbp-pgcontent'>
@@ -67,7 +73,7 @@
 
         }
 
-        $result2 = $wpdb->get_results("SELECT * FROM wp_hirad_shoping");
+        $result2 = $conn->query("SELECT * FROM wp_hirad_shoping");
           foreach ($result2 as $row2) {
 
               array_push($res,$row2);
