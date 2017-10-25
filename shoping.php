@@ -6,7 +6,7 @@
  * Time: 19:44
  */
 
-
+$msd=$_GET['csb'];
 
        $plug_url=plugins_url('hirad_shoping');
        echo "<script>var url_product='".$plug_url."'</script>";

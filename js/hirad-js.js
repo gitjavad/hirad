@@ -13,10 +13,8 @@ var csb='sd'
 		$('.shoping_blb').on('click','h3',function (e) {
             e.preventDefault();
         cbs=e.target.getAttribute('data-name')
+            $('#main_shop').load('../shoping.php?cbs='+cbs)
 
-            $.ajax({
-                url:document.URL+'/index-masonry.php?cbs='+cbs
-            })
 
         })
         $(".icon_div").append(icon);
