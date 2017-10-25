@@ -6,13 +6,20 @@
  * Time: 19:44
  */
 
+
+       $plug_url=plugins_url('hirad_shoping');
+       echo "<script>var url_product='".$plug_url."'</script>";
+        $res=array();
+        global $wpdb;
+        $result = $wpdb->get_results( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='Wood floor' GROUP BY company" );
+        foreach ($result as $row){
             echo "<li>
                    <div class='cbp-pgcontent'>
                       <span class='bk_blb cbp-pgrotate'>Rotate Item</span>";
 
             echo "    <div class='cbp-pgitem'>
                           <div class='box_shop_brand'>
-                            <div class='brand'></div>
+                            <div class='brand'>{$row->company}</div>
                             <div class='list_product'>
                                 ";
 
@@ -58,3 +65,19 @@
                    
                    ";
 
+        }
+
+        $result2 = $wpdb->get_results("SELECT * FROM wp_hirad_shoping");
+          foreach ($result2 as $row2) {
+
+              array_push($res,$row2);
+
+
+
+
+          }
+
+            echo "<script type='text/javascript'>var data_product=[];data_product=".json_encode($res)."</script>"
+
+
+        ?>
