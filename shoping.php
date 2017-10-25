@@ -5,7 +5,7 @@
  * Date: 10/25/2017 AD
  * Time: 19:44
  */
-$category=$_POST['cat'];
+$category=$_GET['cat'];
 
        $plug_url=plugins_url('hirad_shoping');
        echo "<script>var url_product='".$plug_url."'</script>";
