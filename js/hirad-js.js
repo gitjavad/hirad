@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
   var icon = document.getElementById("icon_list");
-var csb='sd'
+
     var child_ul
 
     document.getElementById("shoping-content").style.cssText= 'display:none' ;
@@ -12,7 +12,7 @@ var csb='sd'
     });
 		$('.shoping_blb').on('click','h3',function (e) {
             e.preventDefault();
-        cbs=e.target.getAttribute('data-name')
+        var cbs=e.target.getAttribute('data-name')
             $('#main_shop').load('../wp-content/themes/hirad-site/shoping.php?cbs='+cbs)
 
 
