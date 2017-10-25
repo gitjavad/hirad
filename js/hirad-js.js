@@ -13,6 +13,7 @@ jQuery(document).ready(function($){
 		$('.shoping_blb').on('click','h3',function (e) {
             e.preventDefault();
         var cbs=e.target.getAttribute('data-name')
+            console.log(cbs)
             $('#main_shop').load('../wp-content/themes/hirad-site/shoping.php?cbs='+cbs)
 
 
