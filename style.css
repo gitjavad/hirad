@@ -4507,7 +4507,7 @@ margin-top: 20px;
     margin-right: 10px;
 }
 .list_product{
-    overflow-y: scroll;
+    overflow: scroll;
     padding: 0 !important;
 }
 .list_product ul{
