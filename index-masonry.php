@@ -80,9 +80,7 @@
 <div id="cbp-pgcontainer" class="cbp-pgcontainer">
 	<ul id="main_shop"  class=" cbp-pggrid">
 
-        <?php
-        include ("shoping.php");
-        ?>
+
 
 </ul>
 </div>
