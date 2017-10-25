@@ -15,7 +15,7 @@ var csb='sd'
         cbs=e.target.getAttribute('data-name')
 
             $.ajax({
-                url:document.URL+'/index.php?cbs='+cbs
+                url:document.URL+'/index-masonry.php?cbs='+cbs
             })
 
         })
