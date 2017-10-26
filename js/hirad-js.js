@@ -14,11 +14,11 @@ jQuery(document).ready(function($){
 
             e.preventDefault();
             var cbs = e.target.getAttribute('data-name')
-            console.log(cbs),
+            console.log(cbs)
 
             $.ajax({
                 url:'http://hirad-co.com/wp-content/themes/hirad-site/shoping.php?cat='+cbs,
-                dataType:'json',
+
                 success:function (data) {
                     var brand_list=JSON.parse(data)
                     var main=document.getElementsByClassName("main_shop")
