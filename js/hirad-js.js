@@ -11,6 +11,7 @@ jQuery(document).ready(function($){
         document.getElementById("shoping-content").style.cssText = 'display:block !important';
     });
 		$('.shoping_blb').on('click','h3',function (e) {
+            main.innerHTML="<li></li>"
             e.preventDefault();
             var cbs = e.target.getAttribute('data-name')
             console.log(cbs)
@@ -20,7 +21,7 @@ jQuery(document).ready(function($){
                 success:function (data) {
                     var brand_list=JSON.parse(data)
                     for (var i=0;i<brand_list.length;i++){
-                        main.innerHTML="<li></li>"
+
                         /*-----start code------*/
 
                         /*
