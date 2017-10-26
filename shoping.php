@@ -6,17 +6,37 @@
  * Time: 19:44
  */
 $category=$_GET['cat'];
-
-
 $hostname="localhost";
 $user = "hirad_admin15023";
 $pass= "9133647736!@#";
 $mysql_database = "hirad-co_com_site";
 $conn = new mysqli($hostname, $user, $pass, $mysql_database);
+$product_list=array();
+$brand_list=array();
 mysqli_set_charset($conn,'utf8');
         $res=array();
         $result = $conn->query( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='".$category."' GROUP BY company" );
-        foreach ($result as $row){
+        if ($result->num_rows>0){
+            while ($row=$result->fetch_assoc()){
+                array_push($brand_list,$row['company']);
+            }
+        }else{
+            echo "oh no";
+
+        }
+        printf(json_encode($brand_list));
+
+
+
+
+
+
+
+
+
+
+
+       /* foreach ($result as $row){
             echo "<li>
                    <div class='cbp-pgcontent'>
                       <span class='bk_blb cbp-pgrotate'>Rotate Item</span>";
@@ -84,4 +104,4 @@ mysqli_set_charset($conn,'utf8');
             echo "<script type='text/javascript'>var data_product=[];data_product=".json_encode($res)."</script>"
 
 
-        ?>
+        ?>*/
