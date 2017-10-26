@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
                 dataTupe:'json',
                 success:function (data) {
                     var brand_list=Object.keys(data)
-                    console.log(brand_list)
+                    console.log(brand_list[0])
                 }
             })
         })
