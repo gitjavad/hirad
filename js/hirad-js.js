@@ -23,7 +23,7 @@ jQuery(document).ready(function($){
                     var brand_list=JSON.parse(data)
                     var main=document.getElementsByClassName("main_shop")
                     main[0].innerHTML="<li></li>"
-                    console.log(Object.keys(brand_list));
+                    console.log(Object.keys(brand_list).length);
                         /*-----start code------*/
 
                         /*
