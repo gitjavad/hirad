@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
   var icon = document.getElementById("icon_list");
-
+    var main=document.getElementsByClassName("main_shop")
     var child_ul
 
     document.getElementById("shoping-content").style.cssText= 'display:none' ;
@@ -21,12 +21,20 @@ jQuery(document).ready(function($){
 
                 success:function (data) {
                     var brand_list=JSON.parse(data)
-                    var main=document.getElementsByClassName("main_shop")
-                    main[0].innerHTML="<li></li>"
-                    console.log(Object.keys(brand_list).length);
+
+
+                   var brand= Object.keys(brand_list)
+                    console.log(brand[0])
+                    for (var i=0;i<brand.length;i++){
+
+
+                    }
+
                         /*-----start code------*/
 
                         /*
+                          main[0].innerHTML="<li><div class='cbp-pgcontent'><span class='bk_blb cbp-pgrotate'>Rotate Item</span>" +
+                            "<div class='cbp-pgitem'><div class='box_shop_brand'>  <div class='brand'>"+brand[0]+"</div>"
                         echo "<li>
                    <div class='cbp-pgcontent'>
                       <span class='bk_blb cbp-pgrotate'>Rotate Item</span>";
