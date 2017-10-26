@@ -25,7 +25,8 @@ mysqli_set_charset($conn,'utf8');
             echo "oh no";
 
         }
-        $data_shoping=array("message" => "true");
+
+        $data_shoping=array("message" => $brand_list);
         printf(json_encode($data_shoping));
 
 
