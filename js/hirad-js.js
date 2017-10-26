@@ -16,10 +16,10 @@ jQuery(document).ready(function($){
             console.log(cbs)
             $.ajax({
                 url:'http://hirad-co.com/wp-content/themes/hirad-site/shoping.php?cat='+cbs,
-                dataTupe:'json',
+                dataType:'json',
                 success:function (data) {
                     var a=JSON.parse(data)
-                    console.log(Object.keys(a))
+                    console.log(Object.keys(data))
                 }
             })
         })
