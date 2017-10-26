@@ -18,15 +18,15 @@ jQuery(document).ready(function($){
 
             $.ajax({
                 url:'http://hirad-co.com/wp-content/themes/hirad-site/shoping.php?cat='+cbs,
-
+                dataType:'json',
                 success:function (data) {
-                        var brand_list=JSON.parse(data)
 
 
-                       var brand= Object.keys(brand_list)
-                    console.log(Object.values(brand_list))
+
+
                         for (var i=0;i<brand.length;i++){
-                            main[0].innerHTML="<li><div class='cbp-pgcontent'><span class='bk_blb cbp-pgrotate'>Rotate Item</span>" +
+                            main[0].innerHTML=""
+                            main[0].innerHTML+="<li><div class='cbp-pgcontent'><span class='bk_blb cbp-pgrotate'>Rotate Item</span>" +
                                 "<div class='cbp-pgitem'><div class='box_shop_brand'>  <div class='brand'>"+brand[i]+"</div>"+
                                 "<div class='list_product'></div></div></div>"+"<ul class='cbp-pgoptions'> <li class='cbp-pgoptcompare'>Compare</li>"+
                                 "<li class='cbp-pgoptfav'>Favorite</li>"+

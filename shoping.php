@@ -13,29 +13,31 @@ $mysql_database = "hirad-co_com_site";
 $conn = new mysqli($hostname, $user, $pass, $mysql_database);
 $product_list=array();
 $brand_list=array();
-$data_shoping=array();
+
 mysqli_set_charset($conn,'utf8');
         $res=array();
         $result = $conn->query( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='".$category."' GROUP BY company" );
         if ($result->num_rows>0){
             while ($row=$result->fetch_assoc()){
                 array_push($brand_list,$row['company']);
-                $result2 = $conn->query( "SELECT * FROM wp_hirad_shoping WHERE company='".$row['company']."'" );
-                if ($result2->num_rows>0) {
-                    while ($row2 = $result2->fetch_assoc()) {
-                        array_push($product_list,$row2['sn']);
-                        $data_shoping+=array($row['company'] =>$product_list);
-                    }
-                }
+
 
             }
         }else{
             echo "oh no";
 
         }
+$result2 = $conn->query( "SELECT * FROM wp_hirad_shoping" );
+if ($result2->num_rows>0) {
+    while ($row2 = $result2->fetch_assoc()) {
+        array_push($product_list,$row2);
 
+    }
+}
+$conn->close();
 
-        printf(json_encode($data_shoping));
+        echo $product_list;
+        echo $brand_list;
 
 
 
