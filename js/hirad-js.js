@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
   var icon = document.getElementById("icon_list");
-
+    var main=document.getElementById('main_shop')
     var child_ul
 
     document.getElementById("shoping-content").style.cssText= 'display:none' ;
@@ -20,9 +20,9 @@ jQuery(document).ready(function($){
                 success:function (data) {
                     var brand_list=JSON.parse(data)
                     for (var i=0;i<brand_list.length;i++){
-
+                        main.innerHTML="hi"
                         /*-----start code------*/
-                        $$('.main_shop').innerHTML="hi"
+
                         /*
                         echo "<li>
                    <div class='cbp-pgcontent'>
