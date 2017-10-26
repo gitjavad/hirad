@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
                     var brand_list=JSON.parse(data)
                     var main=document.getElementsByClassName("main_shop")
                     main[0].innerHTML="<li></li>"
-                    console.log(brand_list.length());
+                    console.log(brand_list.length);
                         /*-----start code------*/
 
                         /*
