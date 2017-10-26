@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
   var icon = document.getElementById("icon_list");
-
+    var main=document.getElementsByClassName("main_shop")
     var child_ul
 
     document.getElementById("shoping-content").style.cssText= 'display:none' ;
@@ -21,8 +21,8 @@ jQuery(document).ready(function($){
                 success:function (data) {
                     var brand_list=JSON.parse(data)
                     for (var i=0;i<brand_list.length;i++){
-                        var main=document.getElementById("main_shop")
-                        main.innerHTML="<li></li>"
+
+                        main[0].innerHTML="<li></li>"
                         /*-----start code------*/
 
                         /*
