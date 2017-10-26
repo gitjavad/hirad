@@ -20,13 +20,19 @@ mysqli_set_charset($conn,'utf8');
         if ($result->num_rows>0){
             while ($row=$result->fetch_assoc()){
                 array_push($brand_list,$row['company']);
+                $result2 = $conn->query( "SELECT * FROM wp_hirad_shoping WHERE company='".$row['company']."'" );
+                if ($result2->num_rows>0) {
+                    while ($row2 = $result2->fetch_assoc()) {
+                        array_push($product_list,$row2['sn']);
+                    }
+                }
             }
         }else{
             echo "oh no";
 
         }
 
-        $data_shoping=array("message" => $brand_list);
+        $data_shoping=array("brand" => $brand_list,"product"=>$product_list);
         printf(json_encode($data_shoping));
 
 
