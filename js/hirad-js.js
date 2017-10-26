@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
   var icon = document.getElementById("icon_list");
-    var main=document.getElementsByClassName("main_shop")
+
     var child_ul
 
     document.getElementById("shoping-content").style.cssText= 'display:none' ;
@@ -21,8 +21,9 @@ jQuery(document).ready(function($){
                 success:function (data) {
                     var brand_list=JSON.parse(data)
                     for (var i=0;i<brand_list.length;i++){
-
+                        var main=document.getElementsByClassName("main_shop")
                         main[0].innerHTML="<li></li>"
+                    }
                         /*-----start code------*/
 
                         /*
@@ -81,7 +82,7 @@ jQuery(document).ready(function($){
 
                         /*-----end code--------*/
                     }
-                }
+
             })
         })
         $(".icon_div").append(icon);
