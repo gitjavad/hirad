@@ -20,7 +20,7 @@ jQuery(document).ready(function($){
                 success:function (data) {
                     var brand_list=JSON.parse(data)
                     for (var i=0;i<brand_list.length;i++){
-                        main.innerHTML+=Object.keys(brand_list)
+                        main.innerHTML=Object.keys(brand_list)
                         /*-----start code------*/
 
                         /*
