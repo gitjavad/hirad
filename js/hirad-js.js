@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
                 dataTupe:'json',
                 success:function (data) {
 
-                    console.log(data.key)
+                    console.log(data.key[0])
                 }
             })
         })
