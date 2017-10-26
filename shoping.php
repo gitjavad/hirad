@@ -13,6 +13,7 @@ $mysql_database = "hirad-co_com_site";
 $conn = new mysqli($hostname, $user, $pass, $mysql_database);
 $product_list=array();
 $brand_list=array();
+$data_shoping=array();
 mysqli_set_charset($conn,'utf8');
         $res=array();
         $result = $conn->query( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='".$category."' GROUP BY company" );
@@ -24,7 +25,8 @@ mysqli_set_charset($conn,'utf8');
             echo "oh no";
 
         }
-        printf(json_encode($brand_list));
+        $data_shoping=array("message" => "true");
+        printf(json_encode($data_shoping));
 
 
 
