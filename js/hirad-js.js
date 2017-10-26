@@ -20,9 +20,10 @@ jQuery(document).ready(function($){
 
                 success:function (data) {
                     var brand_list=JSON.parse(data)
+                    var main=document.getElementsByClassName("main_shop")
+                    main[0].innerHTML="<li></li>"
                     for (var i=0;i<brand_list.length;i++){
-                        var main=document.getElementsByClassName("main_shop")
-                        main[0].innerHTML="<li></li>"
+                      console.log(i)
                     }
                         /*-----start code------*/
 
