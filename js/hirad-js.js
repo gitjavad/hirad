@@ -18,8 +18,8 @@ jQuery(document).ready(function($){
                 url:'http://hirad-co.com/wp-content/themes/hirad-site/shoping.php?cat='+cbs,
                 dataTupe:'json',
                 success:function (data) {
-                    var brand_list=Array.keys(data)
-                    console.log(data[0])
+
+                    console.log(data[0].key)
                 }
             })
         })
