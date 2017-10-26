@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
                 dataTupe:'json',
                 success:function (data) {
                     var brand_list=data.list;
-                    console.log(Object.keys(data))
+                    console.log(data)
                 }
             })
         })
