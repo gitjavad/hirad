@@ -35,7 +35,7 @@ mysqli_set_charset($conn,'utf8');
         }
 
 
-        echo($data_shoping);
+        printf(json_encode($data_shoping));
 
 
 
