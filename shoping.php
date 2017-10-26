@@ -24,7 +24,7 @@ mysqli_set_charset($conn,'utf8');
                 if ($result2->num_rows>0) {
                     while ($row2 = $result2->fetch_assoc()) {
                         array_push($product_list,$row2['sn']);
-                        $data_shoping=array($row['company'] =>$product_list);
+                        $data_shoping+=array($row['company'] =>$product_list);
                     }
                 }
 
