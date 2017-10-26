@@ -12,12 +12,17 @@ jQuery(document).ready(function($){
     });
 		$('.shoping_blb').on('click','h3',function (e) {
             e.preventDefault();
-        var cbs=e.target.getAttribute('data-name')
+            var cbs = e.target.getAttribute('data-name')
             console.log(cbs)
-         $('#main_shop').load("../wp-content/themes/hirad-site/shoping.php?cat=Stone");
-
-
-        })
+            $.ajax({
+                url:'http://hirad-co.com/wp-content/themes/hirad-site/shoping.php?cat='+cbs,
+                dataTupe:'json',
+                success:function (data) {
+                    var brand_list=data.keys(0)
+                    console.log(brand_list)
+                }
+            })
+        }
         $(".icon_div").append(icon);
 
     $('.bk_blb').on('click',function (e) {
