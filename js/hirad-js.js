@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
                     for (var i=0;i<brand_list.length;i++){
 
                         /*-----start code------*/
-                        $('.main_shop').innerHTML="hi"
+                        $$('.main_shop').innerHTML="hi"
                         /*
                         echo "<li>
                    <div class='cbp-pgcontent'>
