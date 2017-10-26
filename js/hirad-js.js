@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
                 dataType:'json',
                 success:function (data) {
                     var a=JSON.parse(data)
-                    console.log(data.keys)
+                    console.log(Object.keys(data))
                 }
             })
         })
