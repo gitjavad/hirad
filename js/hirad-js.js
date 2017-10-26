@@ -20,7 +20,7 @@ jQuery(document).ready(function($){
                 success:function (data) {
                     var brand_list=JSON.parse(data)
                     for (var i=0;i<brand_list.length;i++){
-                        main.target.innerHTML="dsa"
+                        main.innerHTML="<li></li>"
                         /*-----start code------*/
 
                         /*
