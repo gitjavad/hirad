@@ -20,10 +20,10 @@ jQuery(document).ready(function($){
                 url:'http://hirad-co.com/wp-content/themes/hirad-site/shoping.php?cat='+cbs,
                 dataType:'json',
                 success:function (data) {
-
+                    var brand_list=JSON.parse(data)
                     var main=document.getElementsByClassName("main_shop")
                     main[0].innerHTML="<li></li>"
-                    console.log(data.length);
+                    console.log(Object.keys(brand_list));
                         /*-----start code------*/
 
                         /*
