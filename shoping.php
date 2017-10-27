@@ -38,6 +38,7 @@ $conn->close();
 
 
         printf(json_encode($brand_list));
+printf(json_encode($product_list));
 
 
 
