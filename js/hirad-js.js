@@ -22,9 +22,10 @@ jQuery(document).ready(function($){
                 success:function (data) {
 
 data_product=data.product
+                    main.innerHTML=""
 
                         for (var i=0;i<data.brand.length;i++){
-                            main.innerHTML=""
+
                             main.innerHTML+="<li><div class='cbp-pgcontent'><span class='bk_blb cbp-pgrotate'>Rotate Item</span>" +
                                 "<div class='cbp-pgitem'><div class='box_shop_brand'>  <div class='brand'>"+data.brand[i]+"</div>"+
                                 "<div class='list_product'></div></div></div>"+"<ul class='cbp-pgoptions'> <li class='cbp-pgoptcompare'>Compare</li>"+
