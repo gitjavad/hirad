@@ -13,6 +13,7 @@ $mysql_database = "hirad-co_com_site";
 $conn = new mysqli($hostname, $user, $pass, $mysql_database);
 $product_list=array();
 $brand_list=array();
+$test= '{ "message": "ok" }';
 
 mysqli_set_charset($conn,'utf8');
         $res=array();
@@ -20,7 +21,7 @@ mysqli_set_charset($conn,'utf8');
         if ($result->num_rows>0){
             while ($row=$result->fetch_assoc()){
                 array_push($brand_list,$row['company']);
-
+                echo $test;
 
             }
         }else{
@@ -37,7 +38,7 @@ if ($result2->num_rows>0) {
 $conn->close();
 
 
-printf(json_encode($product_list));
+
 
 
 
