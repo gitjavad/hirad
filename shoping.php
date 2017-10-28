@@ -39,7 +39,7 @@ if ($result2->num_rows>0) {
 $conn->close();
 $test2=array("brand"=>$brand_list,"product"=>$product_list);
 
-echo $test;
+echo $test2;
 
 
 
