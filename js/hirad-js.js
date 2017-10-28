@@ -46,6 +46,7 @@ data_product=data.product
         $(".icon_div").append(icon);
 
     $('.bk_blb').on('click',function (e) {
+        console.log("hi")
         var img_list=[];
         e.preventDefault();
         var mybrand_name = e.target.nextElementSibling.lastElementChild.firstElementChild.innerHTML
