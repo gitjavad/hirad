@@ -15,6 +15,7 @@ $product_list=array();
 $brand_list=array();
 $test= '{ "message": "ok" }';
 
+
 mysqli_set_charset($conn,'utf8');
         $res=array();
         $result = $conn->query( "SELECT COUNT(*), company FROM wp_hirad_shoping WHERE cat='".$category."' GROUP BY company" );
@@ -36,6 +37,7 @@ if ($result2->num_rows>0) {
     }
 }
 $conn->close();
+$test2=array("brand"=>$brand_list,"product"=>$product_list);
 
 echo $test;
 
