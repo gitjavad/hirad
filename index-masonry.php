@@ -76,6 +76,10 @@
 
 
 	<hr>
+    <?php
+    $plugin_url=plugins_url( 'hirad_shoping', __FILE__ );
+    echo '<script></script>'
+    ?>
 
 <div id="cbp-pgcontainer" class="cbp-pgcontainer">
         <ul id="main_shop"  class=" cbp-pggrid">
