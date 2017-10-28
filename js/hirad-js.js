@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
   var icon = document.getElementById("icon_list");
-    var main=document.getElementsByClassName("main_shop")
+    var main=document.getElementById('main_shop')
     var child_ul
     var data_product
     document.getElementById("shoping-content").style.cssText= 'display:none' ;
