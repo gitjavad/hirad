@@ -83,7 +83,7 @@ var b_d=0
 
                 if (b_d<img_list.length){
                     var text_sn=img_list[o].replace(".jpg","");
-                    child_ul[counter].innerHTML+="<li><img src="+url_product+'/img/'+img_list[o]+" width=100%><p>"+text_sn+"</p></li>"
+                    child_ul[counter].innerHTML+="<li><img src=http://hirad-co.com/wp-content/plugins/hirad_shoping/img/"+img_list[o]+" width=100%><p>"+text_sn+"</p></li>"
                 }else{
                     child_ul[counter].innerHTML+="<li width='100%'></li>"
 
