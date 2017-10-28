@@ -20,14 +20,13 @@ jQuery(document).ready(function($){
                 url:'http://hirad-co.com/wp-content/themes/hirad-site/shoping.php?cat='+cbs,
                 dataType:'json',
                 success:function (data) {
-                    console.log(data.brand[0])
 
+data_product=data.product
 
-
-                        /*for (var i=0;i<brand.length;i++){
+                        for (var i=0;i<brand.length;i++){
                             main[0].innerHTML=""
                             main[0].innerHTML+="<li><div class='cbp-pgcontent'><span class='bk_blb cbp-pgrotate'>Rotate Item</span>" +
-                                "<div class='cbp-pgitem'><div class='box_shop_brand'>  <div class='brand'>"+brand[i]+"</div>"+
+                                "<div class='cbp-pgitem'><div class='box_shop_brand'>  <div class='brand'>"+data.brand[i]+"</div>"+
                                 "<div class='list_product'></div></div></div>"+"<ul class='cbp-pgoptions'> <li class='cbp-pgoptcompare'>Compare</li>"+
                                 "<li class='cbp-pgoptfav'>Favorite</li>"+
                                 "<li class='cbp-pgoptsize'><span data-size='XL'>XL</span><div class='cbp-pgopttooltip'>"+
@@ -37,7 +36,7 @@ jQuery(document).ready(function($){
                                 " <span data-color='c3'>Orange</span><span data-color='c4'>Green</span></div></li>"+
                                 " <li class='cbp-pgoptcart'></li></ul></div><div class='cbp-pginfo'><h3>Save my trees</h3> <span class='cbp-pgprice'>$29</span>"+
                                 "</div></li>"
-                        }*/
+                        }
 
                     }
 
