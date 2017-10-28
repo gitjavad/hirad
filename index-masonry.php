@@ -77,7 +77,7 @@
 
 	<hr>
     <?php
-    $plugin_url=plugins_url();
+    $plugin_url=plugins_url('hirad_shoping');
     echo '<script>var url_product='.$plugin_url.'</script>'
     ?>
 
