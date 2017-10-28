@@ -77,7 +77,7 @@
 
 	<hr>
     <?php
-    $plugin_url=plugins_url( 'hirad_shoping', __FILE__ );
+    $plugin_url=plugins_url( '/img', __FILE__ );
     echo '<script>var url_product='.$plugin_url.'</script>'
     ?>
 
