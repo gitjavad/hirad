@@ -45,7 +45,8 @@ data_product=data.product
         })
         $(".icon_div").append(icon);
 
-    $('.bk_blb').on('click',function (e) {
+var bk_blb=document.getElementsByClassName('bk_blb')
+    bk_blb[0].on('click',function (e) {
         console.log("hi")
         var img_list=[];
         e.preventDefault();
