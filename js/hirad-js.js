@@ -46,7 +46,7 @@ data_product=data.product
         $(".icon_div").append(icon);
 
 
-    $('body').on('click','bk_blb',function (e) {
+    $('body').on('click','.bk_blb',function (e) {
         console.log("hi")
         var img_list=[];
         e.preventDefault();
