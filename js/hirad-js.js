@@ -20,7 +20,7 @@ jQuery(document).ready(function($){
                 url:'http://hirad-co.com/wp-content/themes/hirad-site/shoping.php?cat='+cbs,
                 dataType:'json',
                 success:function (data) {
-                    console.log(data.message)
+                    console.log(data.brand[0])
 
 
 
