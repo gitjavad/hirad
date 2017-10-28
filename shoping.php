@@ -37,7 +37,6 @@ if ($result2->num_rows>0) {
 $conn->close();
 
 
-        printf(json_encode($brand_list));
 printf(json_encode($product_list));
 
 
