@@ -23,7 +23,7 @@ jQuery(document).ready(function($){
 
 data_product=data.product
 
-                        for (var i=0;i<brand.length;i++){
+                        for (var i=0;i<data.brand.length;i++){
                             main[0].innerHTML=""
                             main[0].innerHTML+="<li><div class='cbp-pgcontent'><span class='bk_blb cbp-pgrotate'>Rotate Item</span>" +
                                 "<div class='cbp-pgitem'><div class='box_shop_brand'>  <div class='brand'>"+data.brand[i]+"</div>"+
