@@ -2,10 +2,6 @@
 <section class="centent-hirad">
 	<div id="ajax-loader-masonry" class="ajax-loader"></div>
 
-	<div id="logo_home" class="logo-res">
-		<?php echo do_shortcode('[rev_slider alias="logo"]') ?>
-		<hr>
-	</div>
 
 
 
