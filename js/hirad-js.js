@@ -11,7 +11,7 @@ jQuery(document).ready(function($){
         document.getElementById("shoping-content").style.cssText = 'display:block !important';
     });
 		$('.shoping_blb').on('click','h3',function (e) {
-            $('.cbp-pgcontainer').style.cssText='display:block !important';
+            $('#cbp-pgcontainer').style.cssText='display:block !important';
             e.preventDefault();
             var cbs = e.target.getAttribute('data-name')
             console.log(cbs)
