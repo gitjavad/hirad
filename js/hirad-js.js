@@ -12,6 +12,7 @@ jQuery(document).ready(function($){
     });
 		$('.shoping_blb').on('click','h3',function (e) {
             document.getElementById("cbp-pgcontainer").style.cssText='display:block !important';
+            document.getElementById('masonry').style.cssText='display:none !important'
             e.preventDefault();
             var cbs = e.target.getAttribute('data-name')
             console.log(cbs)
