@@ -71,24 +71,15 @@
 
 
 
-	<hr>
+
     <?php
     $plugin_url=plugins_url('hirad_shoping');
     echo '<script>var url_product='.$plugin_url.'</script>'
     ?>
 
 <div id="cbp-pgcontainer" class="cbp-pgcontainer">
-        <ul id="main_shop"  class=" cbp-pggrid">
-
-
-
-</ul>
+        <ul id="main_shop"  class=" cbp-pggrid"></ul>
 </div>
-
-
-
-	<hr>
-
 
 	<div id="masonry" class="row">
 		<?php $count_ad = 1; if (have_posts()) : while (have_posts()) : the_post(); ?>
