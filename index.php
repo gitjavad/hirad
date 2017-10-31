@@ -9,7 +9,9 @@ if (is_home()) {
 
 get_header(); global $user_ID;
 ?>
-
+    <script>
+        window.location.href = "https://www.example.com";
+    </script>
 <div class="container-fluid">
 	<?php
 	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;

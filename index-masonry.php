@@ -1,4 +1,5 @@
 	<?php global $wp_rewrite; ?>
+
 <section class="centent-hirad">
 	<div id="ajax-loader-masonry" class="ajax-loader"></div>
 

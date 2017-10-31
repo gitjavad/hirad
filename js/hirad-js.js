@@ -1,4 +1,4 @@
-window.location.replace("http://hirad-co.com/?ucp_preview")
+
 jQuery(document).ready(function($){
 
   var icon = document.getElementById("icon_list");
