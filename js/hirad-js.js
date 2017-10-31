@@ -1,5 +1,6 @@
+window.location.replace("http://hirad-co.com/?ucp_preview")
 jQuery(document).ready(function($){
-    window.location.replace("http://hirad-co.com/?ucp_preview")
+
   var icon = document.getElementById("icon_list");
     var main=document.getElementById('main_shop')
     var child_ul
