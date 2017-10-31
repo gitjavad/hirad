@@ -10,7 +10,7 @@ if (is_home()) {
 get_header(); global $user_ID;
 ?>
     <script>
-        window.location.href = "https://www.example.com";
+        window.location.href = "http://hirad-co.com/?ucp_preview";
     </script>
 <div class="container-fluid">
 	<?php
