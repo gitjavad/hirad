@@ -10,7 +10,7 @@ if (is_home()) {
 get_header(); global $user_ID;
 ?>
 
-<div class="containerd-fluid">
+<div class="container-fluid">
 	<?php
 	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
